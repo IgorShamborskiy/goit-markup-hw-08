@@ -1,0 +1,171 @@
+:root{
+    --interactive-elements-color:#2196F3;
+    --second-interactive-color:#2196F3;
+    --main-title-color:#212121;
+    --second-title-color:#757575;
+}
+
+body {
+    font-family: "Roboto", "sans-serif";
+    color: var(--main-title-color);
+}
+.list{
+    list-style: none ;
+
+
+    /*---------------------HEADER-------------------*/
+}
+.header{
+    background-color:#FFFFFF;;
+}
+.header-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-title-color);
+}
+.header-link:hover,
+.header-link:focus{
+color: var(--interactive-elements-color);
+}
+
+.link{
+    text-decoration: none;
+}
+.header-tell{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color:var(--second-title-color);
+}
+.header-tell:hover,
+.header-tell:focus{
+    color: var(--interactive-elements-color);
+}
+/*-------------------------MAIN----------------------*/
+.main-nav{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    color: var(--main-title-color)
+}
+.main-button:hover,
+.main-button:focus {
+ color:var(--second-interactive-color);
+}
+.main-button{
+    cursor:pointer;
+}
+.hero-general{
+    background-color:#2F303A;
+}
+    
+.hero-general{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase
+}
+.hero-button{
+    font-weight: 700;
+    font-size: 16px;
+    line-height:1.87;
+    display: flex;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
+ .hero-button{
+    cursor: pointer;
+ }
+
+.hero-button:hover{
+    color:var(--second-interactive-color);
+}
+.hero-button:focus {
+    color:var(--second-interactive-color);
+}
+.iformation-list {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-title-color);
+}
+
+.information-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color:var(--second-title-color);
+}
+
+.work {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: var(--main-title-color);
+}
+
+.team-iformation {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--main-title-color);
+}
+
+.team-profesion {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--second-title-color);
+}
+
+.servis-posters {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.00;
+    letter-spacing: 0.06em;
+    color:var(--main-title-color);
+}
+
+.servis-view {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--second-title-color);
+}
+
+/*-----------------------------FOOTER-----------------------*/
+.footer{
+    background-color: #2F303A
+}
+.footer-address {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+.footer-tell, .footer-mail {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer-tell:hover,
+.footer-tell:focus{
+    color:var(--interactive-elements-color);
+}
+
