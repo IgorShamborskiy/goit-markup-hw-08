@@ -1,25 +1,33 @@
 :root {
     --interactive-elements-color: #2196F3;
-    --second-interactive-color: #2196F3;
     --main-title-color: #212121;
     --second-title-color: #757575;
+    --third-title-color:#FFFFFF
 }
 
 body {
-    font-family: "Roboto", "sans-serif";
+    font-family: 'Roboto', 'sans-serif';
     color: var(--main-title-color);
+    letter-spacing: 0.03em;
+    background-color:var(--third-title-color);
 }
 
 .list {
     list-style: none;
-
-
-    /*---------------------HEADER-------------------*/
 }
 
-.header {
-    background-color: #FFFFFF;
-    ;
+/*---------------------------------------HEADER-------------------*/
+
+.header-logo,.work {
+    font-family: 'Raleway','cursive';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--interactive-elements-color);
+}
+
+.word {
+    color: #000000;
 }
 
 .header-link {
@@ -54,17 +62,17 @@ body {
 
 /*-------------------------MAIN----------------------*/
 .main-button {
-    font-family:'Roboto';
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    letter-spacing: 0.03em;
+    text-align: center;
     color: var(--main-title-color)
 }
 
 .main-button:hover,
 .main-button:focus {
-    color: var(--second-interactive-color);
+    color: var(--interactive-elements-color);
 }
 
 .main-button {
@@ -72,26 +80,25 @@ body {
 }
 
 .hero-general {
-    background-color: #2F303A;
-}
-
-.hero-general {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    text-transform: uppercase
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #2F303A;
 }
 
 .hero-button {
-    font-family:'Roboto';
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     display: flex;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(--third-title-color);
+    ;
 }
 
 .hero-button {
@@ -99,18 +106,17 @@ body {
 }
 
 .hero-button:hover {
-    color: var(--second-interactive-color);
+    color: var(--interactive-elements-color);
 }
 
 .hero-button:focus {
-    color: var(--second-interactive-color);
+    color: var(--interactive-elements-color);
 }
 
 .iformation-list {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--main-title-color);
 }
@@ -119,38 +125,44 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
     color: var(--second-title-color);
 }
 
-.work {
+.our-work,
+.team-ourtim { 
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
-    letter-spacing: 0.03em;
+    text-align: center;
     color: var(--main-title-color);
 }
-.team{
-    background-color:#F5F4FA;
+
+.team {
+    background-color: #F5F4FA;
 }
-   
+.team-ourtim{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: var(--main-title-color);
+}
 .team-iformation {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
-    letter-spacing: 0.03em;
     color: var(--main-title-color);
-    background-color: #FFFFFF;
+    background-color: var(--third-title-color);
+    ;
 }
 
 .team-profesion {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
-    letter-spacing: 0.03em;
     color: var(--second-title-color);
-    background-color: #FFFFFF;
-    
+    background-color: var(--third-title-color);
+
 }
 
 .servis-posters {
@@ -165,7 +177,6 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
-    letter-spacing: 0.03em;
     color: var(--second-title-color);
 }
 
@@ -178,8 +189,8 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--third-title-color);
+
 }
 
 .footer-tell,
@@ -187,7 +198,6 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
 
