@@ -18,7 +18,10 @@ body {
 
 /*---------------------------------------HEADER-------------------*/
 
-.header-logo,.work {
+.header-logo,
+.work,
+.footer-logo
+{
     font-family: 'Raleway','cursive';
     font-weight: 700;
     font-size: 26px;
