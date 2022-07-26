@@ -2,14 +2,14 @@
     --interactive-elements-color: #2196F3;
     --main-title-color: #212121;
     --second-title-color: #757575;
-    --third-title-color:#FFFFFF
+    --third-title-color: #FFFFFF
 }
 
 body {
     font-family: 'Roboto', 'sans-serif';
     color: var(--main-title-color);
     letter-spacing: 0.03em;
-    background-color:var(--third-title-color);
+    background-color: var(--third-title-color);
 }
 
 .list {
@@ -20,15 +20,27 @@ body {
 
 .header-logo,
 .work,
-.footer-logo
-{
-    font-family: 'Raleway','cursive';
+.footer-logo {
+    font-family: 'Raleway', 'cursive';
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     color: var(--interactive-elements-color);
 }
 
+.studia-title,
+.portfolio-title {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--interactive-elements-color);
+}
+
+.studia-titl{
+
+}
 .word {
     color: #000000;
 }
@@ -50,6 +62,7 @@ body {
     text-decoration: none;
 }
 
+.header-mail,
 .header-tell {
     font-weight: 500;
     font-size: 14px;
@@ -58,9 +71,25 @@ body {
     color: var(--second-title-color);
 }
 
+.header-mail:hover,
+.header-mail:focus {
+    color: var(--interactive-elements-color);
+}
+
+
 .header-tell:hover,
 .header-tell:focus {
     color: var(--interactive-elements-color);
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--third-title-color);
 }
 
 /*-------------------------MAIN----------------------*/
@@ -93,27 +122,25 @@ body {
 }
 
 .hero-button {
-    font-family: inherit;
+    font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     display: flex;
+    align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--third-title-color);
-    ;
+    background: var(--interactive-elements-color);
 }
 
 .hero-button {
     cursor: pointer;
 }
 
-.hero-button:hover {
-    color: var(--interactive-elements-color);
-}
-
+.hero-button:hover,
 .hero-button:focus {
-    color: var(--interactive-elements-color);
+color:: var(--interactive-elements-color);
 }
 
 .iformation-list {
@@ -132,7 +159,7 @@ body {
 }
 
 .our-work,
-.team-ourtim { 
+.team-ourtim {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -143,13 +170,15 @@ body {
 .team {
     background-color: #F5F4FA;
 }
-.team-ourtim{
+
+.team-ourtim {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     color: var(--main-title-color);
 }
+
 .team-iformation {
     font-weight: 500;
     font-size: 16px;
@@ -188,6 +217,13 @@ body {
     background-color: #2F303A
 }
 
+.footer-word {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--third-title-color);
+}
+
 .footer-address {
     font-weight: 400;
     font-size: 14px;
@@ -204,7 +240,7 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-tell:hover,
+.footer-mail .footer-tell:hover,
 .footer-tell:focus {
     color: var(--interactive-elements-color);
 }
