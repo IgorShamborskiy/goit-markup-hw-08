@@ -248,7 +248,11 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-mail .footer-tell:hover,
-.footer-tell:focus {
+.footer-mail:hover,
+.footer-mail:focus {
     color: var(--interactive-elements-color);
+}
+.footer-tell:hover,
+.footer-tell:focus{
+        color: var(--interactive-elements-color);
 }
