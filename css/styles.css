@@ -135,11 +135,9 @@ body {
 .hero-button {
     cursor: pointer;
 }
-
-.hero-button:hover,
-.hero-button:focus {
-color: var(--third-title-color);
-background: var(--interactive-elements-color);
+.hero-button:focus,
+.hero-button:hover {
+color: var(--interactive-elements-color);
 }
 
 
@@ -223,7 +221,14 @@ background: var(--interactive-elements-color);
     line-height: 1.19;
     color: var(--third-title-color);
 }
-
+.footer-word{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.19;
+    line-height: 31px;
+    color: var(--third-title-color);
+}
 .footer-address {
     font-weight: 400;
     font-size: 14px;
