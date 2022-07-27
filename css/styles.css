@@ -254,6 +254,11 @@ color: var(--interactive-elements-color);
 .footer-word:focus{
     color: var(--interactive-elements-color);
 }
+.footer-address:hover,
+.footer-address:focus{
+    color: var(--interactive-elements-color);
+}
+
 .footer-mail:hover,
 .footer-mail:focus {
     color: var(--interactive-elements-color);
