@@ -92,12 +92,13 @@ body {
 
 /*-------------------------MAIN----------------------*/
 .main-button {
-    font-family: inherit;
+    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
-    color: var(--main-title-color)
+    color: var(--main-title-color);
+    background-color: #F5F4FA;
 }
 
 .main-button:hover,
@@ -129,7 +130,7 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--third-title-color);
-    background: var(--interactive-elements-color);
+    background-color: var(--interactive-elements-color);
 }
 
 .hero-button {
