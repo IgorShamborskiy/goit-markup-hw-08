@@ -138,7 +138,8 @@ body {
 
 .hero-button:hover,
 .hero-button:focus {
-color: var(--interactive-elements-color);
+color: var(--third-title-color);
+background: var(--interactive-elements-color);
 }
 
 
