@@ -136,9 +136,11 @@ body {
 .hero-button {
     cursor: pointer;
 }
+
 .hero-button:focus,
 .hero-button:hover {
-background-color:#2196F3;
+    color: var(--third-title-color);
+    background-color: var(--interactive-elements-color);
 }
 
 .iformation-list {
@@ -221,7 +223,8 @@ background-color:#2196F3;
     line-height: 1.19;
     color: var(--third-title-color);
 }
-.footer-word{
+
+.footer-word {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -229,6 +232,7 @@ background-color:#2196F3;
     line-height: 31px;
     color: var(--third-title-color);
 }
+
 .footer-address {
     font-weight: 400;
     font-size: 14px;
