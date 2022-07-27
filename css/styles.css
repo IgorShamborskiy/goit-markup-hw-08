@@ -92,7 +92,7 @@ body {
 
 /*-------------------------MAIN----------------------*/
 .main-button {
-    font-family: 'Roboto';
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -121,7 +121,7 @@ body {
 }
 
 .hero-button {
-    font-family: 'Roboto';
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -138,9 +138,9 @@ body {
 }
 .hero-button:focus,
 .hero-button:hover {
-color: var(--interactive-elements-color);
+color: var(--third-title-color);
+background-color: var(--interactive-elements-color);
 }
-
 
 .iformation-list {
     font-weight: 700;
