@@ -106,8 +106,9 @@ color: var(--interactive-elements-color);
 
 .main-button:hover,
 .main-button:focus {
-    color: var(--interactive-elements-color);
-}
+    color: var(--third-title-color);
+    background-color:var(--interactive-elements-color);
+    }
 
 .main-button {
     cursor: pointer;
@@ -138,15 +139,16 @@ color: var(--interactive-elements-color);
 
 .hero-button {
     cursor: pointer;
+    
 }
 
 .hero-button:focus,
 .hero-button:hover {
     color: var(--third-title-color);
-    background-color: var(--interactive-elements-color);
+    background-color: #188CE8;
 }
 
-.iformation-list {
+.pre-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -183,6 +185,7 @@ color: var(--interactive-elements-color);
 }
 
 .team-iformation {
+    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -192,6 +195,7 @@ color: var(--interactive-elements-color);
 }
 
 .team-profesion {
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
@@ -208,6 +212,14 @@ color: var(--interactive-elements-color);
     color: var(--main-title-color);
 }
 
+.poster{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.00;
+    letter-spacing: 0.06em;
+    color: #212121;
+    
+}
 .servis-view {
     font-weight: 400;
     font-size: 16px;
@@ -240,6 +252,7 @@ color: var(--interactive-elements-color);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+    font-style: normal;
     color: var(--third-title-color);
 }
 
@@ -248,12 +261,10 @@ color: var(--interactive-elements-color);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+    font-style: normal;
     color: rgba(255, 255, 255, 0.6);
 }
-.footer-word:hover,
-.footer-word:focus{
-    color: var(--interactive-elements-color);
-}
+
 .footer-address:hover,
 .footer-address:focus{
     color: var(--interactive-elements-color);
