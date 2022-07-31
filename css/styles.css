@@ -23,23 +23,65 @@ body {
 .list {
     list-style: none;
 }
-
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding-left: 0;
+}
 /*---------------------------------------HEADER-------------------*/
 
-.header-conteiner{
-    display:flex;
-    align-items: center;
+.conteiner{
+width: 1200px;
+height: 80px;
+padding: 0 15px;
+display: flex;
+align-items: center;
+
 }
-.header,.header-list{
+.header-list{
     display: flex;
-        align-items: center;
+    column-gap: 50px;
+    margin: 0px;
+    padding: 0px;
 }
-.container-header{
-    width: 1600px;
-    height: 80px;
-    left: 0px;
-    top: 0px;
-    background: #FFFFFF;
+.header-item{
+    padding: 32px 0;
+    display: block;
+}
+.header-logo{
+    margin-right: 96px;
+}
+.header-contacts{
+    display: flex;
+    margin-left: auto;
+    column-gap: 50px;
+}
+.header-mail,.header-tell{
+display: block;
+padding: 32px 0;
+}
+
+.conteiner-header-div{
+    border-bottom: 1px;
+    padding: 0px 15px;
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.conteiner-hero{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;  
 }
 
 .header-logo,
@@ -57,12 +99,7 @@ body {
     left: 215px;
     top: 24px;
 }
-.header-logo{
-    margin-right: 93px;
-}
-.header-list{
-    column-gap: 50px;
-}
+
 .studia-title,
 .portfolio-title {
     font-family: 'Roboto';
@@ -108,6 +145,7 @@ color: var(--interactive-elements-color);
 .link {
     text-decoration: none;
 }
+
 .header-contacts{
 margin-left: auto;
 }
@@ -140,6 +178,8 @@ margin-left: auto;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--third-title-color);
+    max-width: 696px;
+    margin:0 auto 30px;
 }
 
 /*-------------------------MAIN----------------------*/
@@ -171,14 +211,19 @@ margin-left: auto;
     text-align: center;
     text-transform: uppercase;
     background-color: #2F303A;
+    padding: 200px 0px;
 }
 
 .hero-button {
+    border-radius: 4px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 32px;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
