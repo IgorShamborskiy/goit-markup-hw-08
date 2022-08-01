@@ -327,15 +327,18 @@ margin-left: auto;
 .team-list{
     display: flex;
     gap: 30px;
+    
 }
+.team-background{
+    background-color: var(--third-title-color);
+}
+
 .team-iformation {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     color: var(--main-title-color);
-    background-color: var(--third-title-color);
-    ;
 }
 
 .team-profesion {
@@ -345,8 +348,6 @@ margin-left: auto;
     font-size: 16px;
     line-height: 1.18;
     color: var(--second-title-color);
-    background-color: var(--third-title-color);
-
 }
 
 .team-img{
