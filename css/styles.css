@@ -46,6 +46,9 @@ ul{
     align-items: center;
     margin: 0 auto;
 }
+.header{
+    border-bottom: 1px solid #ECECEC;
+}
 
 .header-list{
     display: flex;
@@ -219,8 +222,8 @@ margin-left: auto;
 }
 .servis-list{
     display: flex;
-    gap:30px;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
+    gap: 30px;
 
 }
 .section-partfolio{
@@ -334,10 +337,9 @@ margin-left: auto;
     max-width: 100%;
     height: auto;
 }
-.team {
-    background-color: #F5F4FA;
-}
+
 .team{
+    background-color: #F5F4FA;
     padding: 94px 0px;
 }
 .conteiner-general{
@@ -385,7 +387,6 @@ margin-left: auto;
     line-height: 1.8px;
 }
 .servis-posters {
-    margin-bottom: 0px;
     display: block;
     font-weight: 700;
     font-size: 18px;
@@ -395,20 +396,25 @@ margin-left: auto;
 }
 
 .poster{
+    margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2.00;
     letter-spacing: 0.06em;
     color: #212121;
-    margin-bottom: 4px;
-    
 }
 .poster-information {
+
+    display: block;
     max-width: 370px;
-    border: 1px;
+    border-left: 1px  solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
     padding: 20px 24px;
+    line-height: 1.8px;
     border-top: transparent;
-}
+    }
+
 
    
 
