@@ -213,8 +213,31 @@ margin-left: auto;
 
 .main-button {
     cursor: pointer;
+    border: transparent;
+    padding: 6px 22px;
+    border-radius: 4px;
 }
+.servis-list{
+    display: flex;
+    gap:30px;
+    flex-wrap:wrap;
 
+}
+.section-partfolio{
+    padding: 94px 0;
+}
+.conteiner-partfolio{
+    display: block;
+    width: 1200px;
+    padding: 0 15px;
+    margin: auto;
+}
+.main-ul{
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+    column-gap: 8px;
+}
 .hero-general {
     font-weight: 900;
     font-size: 44px;
@@ -256,7 +279,6 @@ margin-left: auto;
 
 .pre-title {
     margin-bottom: 10px;
-
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -363,6 +385,8 @@ margin-left: auto;
     line-height: 1.8px;
 }
 .servis-posters {
+    margin-bottom: 0px;
+    display: block;
     font-weight: 700;
     font-size: 18px;
     line-height: 2.00;
@@ -376,8 +400,19 @@ margin-left: auto;
     line-height: 2.00;
     letter-spacing: 0.06em;
     color: #212121;
+    margin-bottom: 4px;
     
 }
+.poster-information {
+    max-width: 370px;
+    border: 1px;
+    padding: 20px 24px;
+    border-top: transparent;
+}
+
+   
+
+
 .servis-view {
     font-weight: 400;
     font-size: 16px;
