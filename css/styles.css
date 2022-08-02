@@ -313,9 +313,6 @@ margin-left: auto;
     margin: 0px;
     padding: 0px;
 }
-.information-list{
-    width: 270px;
-}
 .our-work,
 .team-ourtim {
     margin-bottom: 50px;
@@ -384,15 +381,10 @@ margin-left: auto;
     display: block;
     padding: 30px 5px;
     text-align: center;
-    line-height: 1.8px;
+    line-height: 1.8;
 }
 .servis-posters {
-    display: block;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2.00;
-    letter-spacing: 0.06em;
-    color: var(--main-title-color);
+   
 }
 
 .poster{
@@ -403,16 +395,17 @@ margin-left: auto;
     letter-spacing: 0.06em;
     color: #212121;
 }
-.poster-information {
+.posters-li{
+    width: 370px;
+    gap: 30px;
+    background-color: #FFFFFF;
+}
 
-    display: block;
-    max-width: 370px;
+.poster-information {
     border-left: 1px  solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
     padding: 20px 24px;
-    line-height: 1.8px;
-    border-top: transparent;
     }
 
 
@@ -452,8 +445,8 @@ margin-left: auto;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
-    font-size: 1.19;
-    line-height: 31px;
+    font-size: 26px;
+    line-height: 1.19;
     color: var(--third-title-color);
 }
 
