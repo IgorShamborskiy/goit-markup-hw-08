@@ -39,30 +39,46 @@ ul{
 /*---------------------------------------HEADER-------------------*/
 
 
-.conteiner {
-    width: 1200px;
-    padding: 0 15px;
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-}
 .header{
     border-bottom: 1px solid #ECECEC;
 }
-
+.conteiner {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.header-nav{
+    display: block;
+    
+}
 .header-list{
     display: flex;
     column-gap: 50px;
     margin: 0px;
     padding: 0px;
 }
-.header-item{
+.div-header {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+   
+}
+.header-item {
     padding: 32px 0;
     display: block;
 }
+
+.header-div{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+    
+
 .header-logo{
     margin-right: 96px;
 }
+
 .header-contacts{
     display: flex;
     margin-left: auto;
@@ -81,13 +97,6 @@ padding: 32px 0;
     padding-top: 24px;
     padding-bottom: 25px;
 }
-
-.conteiner-hero{
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;  
-}
-
 .header-logo,
 .work,
 .footer-logo {
@@ -125,7 +134,9 @@ padding: 32px 0;
     color: var(--interactive-elements-color);
 }
 
-
+.parfolio-title{
+    color: var(--interactive-elements-color);
+}
 .word {
     color: #000000;
 }
@@ -146,6 +157,8 @@ color: var(--interactive-elements-color);
     color: var(--interactive-elements-color);
 }
 .header-link{
+    padding: 32px 0;
+    display: block;
     width: 45px;
     height: 16px;
     left: 453px;
@@ -299,12 +312,8 @@ margin-left: auto;
     padding: 94px 0;
     
 }
-.conteiner-information{
-    margin: 0 auto;
-    padding: 0 15px;
-    width: 1200px;
-    display: block;
-
+.information-list{
+    width: 370px;
 }
 .iformation-prelist{
     display: flex;
@@ -321,8 +330,9 @@ margin-left: auto;
     text-align: center;
     color: var(--main-title-color);
 }
-.our-work{
-    padding-bottom: 50px;
+
+img{
+    display: block;
 }
 .work-list{
     display: flex;
@@ -362,7 +372,7 @@ margin-left: auto;
 }
 
 .team-profesion {
-    padding-top: 10px;
+    margin-top: 10px;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -377,7 +387,6 @@ margin-left: auto;
     margin-bottom: 0px;
 }
 .team-list-information{
-    display: block;
     padding: 30px 5px;
     text-align: center;
     line-height: 1.8;
@@ -446,8 +455,6 @@ margin-left: auto;
 }
 
 .footer-address {
-    display: block;
-    margin-bottom: 9px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -468,15 +475,17 @@ margin-left: auto;
 .footer-address:focus{
     color: var(--interactive-elements-color);
 }
-
+.adress-li{
+    margin-bottom: 9px;
+}
 .footer-mail:hover,
 .footer-mail:focus {
     color: var(--interactive-elements-color);
 }
-.footer-mail{
-    display: block;
+.footer-li{
     margin-bottom: 9px;
 }
+
 .footer-tell:hover,
 .footer-tell:focus{
         color: var(--interactive-elements-color);
