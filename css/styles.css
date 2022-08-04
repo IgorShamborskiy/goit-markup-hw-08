@@ -53,19 +53,15 @@ ul{
     align-items: center;
 
 }
-.header-nav{
-   
-    
-}
+
 .header-list{
     display: flex;
     column-gap: 50px;
 }
-.div-header {
-   
-   
-}
+
 .header-item {
+    padding: 32px 0;
+    display: block;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -144,8 +140,6 @@ color: var(--interactive-elements-color);
     color: var(--interactive-elements-color);
 }
 .header-link{
-    padding: 32px 0;
-    display: block;
     width: 45px;
     height: 16px;
     left: 453px;
@@ -392,6 +386,7 @@ img{
     color: #212121;
 }
 .posters-li{
+    font-family: 'Roboto', 'sans-serif';
     width: 370px;
     background-color: #FFFFFF;
     gap: 30px;
