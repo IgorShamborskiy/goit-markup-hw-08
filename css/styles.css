@@ -31,10 +31,11 @@ h4,
 h5,
 h6{
     margin: 0;
+    padding: 0;
 }
 ul{
     margin: 0;
-    padding-left: 0;
+    padding: 0;
 }
 /*---------------------------------------HEADER-------------------*/
 
@@ -47,46 +48,38 @@ ul{
     padding: 0 15px;
     margin: 0 auto;
 }
+.header-conteiner{
+    display: flex;
+    align-items: center;
+
+}
 .header-nav{
-    display: block;
+   
     
 }
 .header-list{
     display: flex;
     column-gap: 50px;
-    margin: 0px;
-    padding: 0px;
 }
 .div-header {
-    display: flex;
-    align-items: center;
-    column-gap: 50px;
+   
    
 }
 .header-item {
-    padding: 32px 0;
-    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
-
-.header-div{
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-}
-    
-
 .header-logo{
-    margin-right: 96px;
+   margin-right: 93px; 
 }
 
 .header-contacts{
-    display: flex;
-    margin-left: auto;
-    column-gap: 50px;
+   
 }
 .header-mail,.header-tell{
-display: block;
-padding: 32px 0;
+
 }
 
 .conteiner-header-div{
@@ -116,12 +109,6 @@ padding: 32px 0;
     width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
-}
-.header-logo{
-    width: 145px;
-    height: 31px;
-    left: 215px;
-    top: 24px;
 }
 
 .studia-title,
@@ -175,6 +162,9 @@ color: var(--interactive-elements-color);
 }
 
 .header-contacts{
+    padding: 32px 0;
+    display:flex;
+    column-gap: 50px;
 margin-left: auto;
 }
 
@@ -404,6 +394,7 @@ img{
 .posters-li{
     width: 370px;
     background-color: #FFFFFF;
+    gap: 30px;
 }
 
 .poster-information {
