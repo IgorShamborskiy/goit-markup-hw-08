@@ -60,6 +60,8 @@ ul{
 }
 
 .header-item {
+    padding: 32px 0;
+    display: block;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -126,8 +128,7 @@ ul{
 color: var(--interactive-elements-color);
 }
 .header-link {
-    padding: 32px 0;
-    display: block;
+    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -243,7 +244,14 @@ margin-left: auto;
     letter-spacing: 0.06em;
     text-align: center;
     text-transform: uppercase;
-    background-color: #2F303A;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25),
+        rgba(0, 0, 0, 0.25)) , 
+    url(../img/hero-bgphoto.jpg);
+    max-width: 1600px;
+    margin: 0 auto;
     padding: 200px 0px;
 }
 
@@ -355,12 +363,39 @@ img{
 }
 
 .team-profesion {
+    margin-bottom: 16px;
     margin-top: 10px;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
     color: var(--second-title-color);
+}
+.team-icon{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+}
+.team-icon-link{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--third-title-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team-icon-co{
+    fill: #AFB1B8;
+}
+.team-icon-link:hover,
+.team-icon-link:focus{
+background-color: var(--interactive-elements-color); ;
+}
+.team-icon-link:hover .team-icon-co,
+.team-icon-link:focus .team-icon-co{
+    fill: var(--third-title-color);
 }
 
 .team-img{
