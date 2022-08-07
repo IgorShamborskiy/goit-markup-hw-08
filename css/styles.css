@@ -71,13 +71,6 @@ ul{
    margin-right: 93px; 
 }
 
-.header-contacts{
-   
-}
-.header-mail,.header-tell{
-
-}
-
 .conteiner-header-div{
     border-bottom: 1px;
     padding: 0px 15px;
@@ -99,6 +92,8 @@ ul{
     padding: 0px 0px 94px;
 
 }
+
+
 .conteiner-work{
     display: block;
     align-items: center;
@@ -291,7 +286,20 @@ margin-left: auto;
     text-transform: uppercase;
     color: var(--main-title-color);
 }
+.benefits{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 30px;
+   
+    }
+.benefits-li{
+width: 270px;
+height: 120px;
+padding: 25px 100px;
+background-color: #F5F4FA;;
 
+}
 .information-text {
     font-weight: 400;
     font-size: 14px;
