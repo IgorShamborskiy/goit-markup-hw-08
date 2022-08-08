@@ -157,6 +157,7 @@ column-gap: 50px;
 margin-left: auto;
 }
 
+
 .header-mail,
 .header-tell {
     font-weight: 500;
@@ -166,16 +167,26 @@ margin-left: auto;
     color: var(--second-title-color);
 }
 
-.header-mail:hover,
-.header-mail:focus {
+.header-mail:hover,.mail-icon
+.header-mail:focus,.mail-icon {
     color: var(--interactive-elements-color);
 }
+
+.mail-icon{
+margin-right: 10px;
+justify-content: center;
+    fill: #AFB1B8;
+}
+
+
+
 
 
 .header-tell:hover,
 .header-tell:focus {
     color: var(--interactive-elements-color);
 }
+
 
 .hero-title {
     font-weight: 900;
