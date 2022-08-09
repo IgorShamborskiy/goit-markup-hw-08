@@ -422,7 +422,7 @@ img{
 }
 .team-icon-link:hover,
 .team-icon-link:focus{
-background-color: var(--interactive-elements-color); ;
+background-color: var(--interactive-elements-color); 
 }
 .team-icon-link:hover .team-icon-co,
 .team-icon-link:focus .team-icon-co{
@@ -591,3 +591,47 @@ background-color: var(--interactive-elements-color); ;
 .footer-tell:focus{
         color: var(--interactive-elements-color);
 }
+.footer .conteiner{
+    display:flex;
+
+}
+.footer-icon{
+    max-width: 206px;
+    margin-left: 70px;
+}
+.footer-h{
+    margin-bottom: 20px;
+}
+.footer-icon-ul{
+    margin-top: 20px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+}
+.footer-icon-link{
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background-color: rgba(255, 255, 255, 0.1);
+border-radius: 50%;
+}
+.footer-icon-co{
+
+    fill: var(--third-title-color);
+}
+.footer-h{
+    font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+}
+
+.footer-icon-link:hover,
+.footer-icon-link:focus {
+    background-color: var(--interactive-elements-color);
+}
+
