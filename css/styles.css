@@ -154,12 +154,17 @@ color: var(--interactive-elements-color);
 .header-contacts{
 display:flex;
 column-gap: 50px;
+justify-content: center;
 margin-left: auto;
 }
 
 
 .header-mail,
 .header-tell {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -315,6 +320,7 @@ margin-left: auto;
 }
 .benefits{
     display: flex;
+    
     justify-content: center;
     gap: 30px;
     padding-bottom: 30px;
@@ -492,7 +498,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
 
 .clientage-header {
     margin-top: 94px;
-    padding-bottom: 50px; 
+    margin-bottom: 50px; 
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -524,7 +530,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
 
 }
 .clientage-section{
-    margin-bottom: 94px;
+    padding-bottom: 94px;
 }
 .clientage-icon {
     fill: #AFB1B8;
