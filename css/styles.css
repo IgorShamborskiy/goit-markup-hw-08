@@ -470,10 +470,9 @@ background-color: var(--interactive-elements-color);
     background-color: #FFFFFF;
     gap: 30px;
 }
-.posters-li:hover,
-.posters-li:focus{
+.servis-posters:hover,
+.servis-posters:focus{
 background: #FFFFFF;
-border: 1px solid #EEEEEE;
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
 0px 4px 4px rgba(0, 0, 0, 0.06), 
 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -521,9 +520,9 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
 }
 .clientage-li-link {
     border: 1px solid #AFB1B8;
+    width: 170px;
+    height: 92px;
     border-radius: 4px;
-    display: block;
-    padding: 13px 32px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -617,21 +616,18 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
 }
 .footer .conteiner{
     display:flex;
+    align-items: baseline;
 
 }
 .footer-icon{
-    margin-top: 12px;
-    max-width: 206px;
     margin-left: 70px;
 }
 .footer-h{
     margin-bottom: 20px;
 }
 .footer-icon-ul{
-    margin-top: 20px;
     gap: 10px;
-    display: flex;
-    justify-content: center;
+    display: flex; 
 }
 .footer-icon-link{
     width: 44px;
