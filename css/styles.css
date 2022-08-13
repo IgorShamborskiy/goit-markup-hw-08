@@ -44,6 +44,14 @@ ul {
 
 /*---------------------------------------HEADER-------------------*/
 
+@keyframes animation{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
 
 .header {
     border-bottom: 1px solid #ECECEC;
@@ -128,6 +136,8 @@ ul {
 
 .word {
     color: #000000;
+    transition: color 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .word:hover,
@@ -142,6 +152,8 @@ ul {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--main-title-color);
+    transition: color 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link:hover,
@@ -186,6 +198,8 @@ ul {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--second-title-color);
+    transition: color 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -193,6 +207,8 @@ ul {
     margin-right: 10px;
     text-align: center;
     fill: #757575;
+    transition: color 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-mail:hover,
@@ -210,6 +226,8 @@ ul {
     margin-right: 10px;
     text-align: center;
     fill: #757575;
+    transition: color 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-tell:hover,
@@ -243,6 +261,8 @@ ul {
     text-align: center;
     color: var(--main-title-color);
     background-color: #F5F4FA;
+    transition: background-color 250ms linear, color 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-button:hover,
@@ -319,10 +339,13 @@ ul {
     letter-spacing: 0.06em;
     color: var(--third-title-color);
     background-color: var(--interactive-elements-color);
+    transition: background-color 250ms linear, color 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button {
     cursor: pointer;
+    
 
 }
 
@@ -474,10 +497,14 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-icon-co {
     fill: #AFB1B8;
+    transition: fill 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-icon-link:hover,
@@ -518,20 +545,48 @@ img {
     width: 370px;
     background-color: #FFFFFF;
     gap: 30px;
+    position: relative;
+}
+
+.posters-li:hover .subtext{
+transform: translateY(0);
+}
+
+.servis-posters {
+    display: block;
+   
 }
 
 .servis-posters:hover,
 .servis-posters:focus {
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
 
 }
-
-.servis-posters{
-    display: block;
+.subtext-div{
+    position: relative;
+    overflow: hidden;
 }
+
+.subtext{
+    position: absolute;
+    top: 0;
+        left: 0;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.55;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+        background: rgba(33, 150, 243, 0.9);
+            padding: 63px 12px 63px 36px;
+            transform: translateY(100%);
+            transition: transform 250ms linear;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+   
+   
 .poster-information {
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
@@ -580,7 +635,8 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    transition: border-color 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clientage-section {
@@ -590,6 +646,8 @@ img {
 
 .clientage-icon {
     fill: #AFB1B8;
+    transition: fill 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clientage-li-link:hover,
@@ -644,6 +702,8 @@ img {
     line-height: 1.71;
     font-style: normal;
     color: var(--third-title-color);
+    transition: color 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-tell,
@@ -653,6 +713,8 @@ img {
     line-height: 1.71;
     font-style: normal;
     color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-address:hover,
@@ -705,11 +767,13 @@ img {
     align-items: center;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
+    transition: background-color 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icon-co {
-
     fill: var(--third-title-color);
+
 }
 
 .footer-h {
