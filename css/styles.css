@@ -108,7 +108,25 @@ ul {
 
 .work {
     padding: 0px 0px 94px;
-
+}
+.work-title-div{
+pos
+}
+.work-title{
+width: 370px;
+height: 70px;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+background-color: rgba(47, 48, 58, 0.8);
+position: absolute;
+transform: translateY(0);
+bottom:0;
+padding-top:27px;
 }
 
 
@@ -433,6 +451,7 @@ img {
 }
 
 .work-foto {
+    position: relative;
     display: block;
     max-width: 100%;
     height: auto;
@@ -788,4 +807,47 @@ transform: translateY(0);
 .footer-icon-link:hover,
 .footer-icon-link:focus {
     background-color: var(--interactive-elements-color);
+}
+.backdrop{
+    transition: opacity 250ms linear, visibility 250ms;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+background: rgba(0, 0, 0, 0.2);
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.modal{
+    position: absolute;
+    width: 528px;
+    min-height: 581px;
+    background-color: #FFFFFF;
+    border-radius:10px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%) scale(1);
+    transition:transform 250ms ;
+    
+}
+.backdrop.is-hidden .modal{
+transform: translate(-50%, -50%) scale(0);
+}
+.modal-battom{
+    position:absolute;
+    display: flex;
+    justify-content: center;
+        align-items: center;
+    background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        right: 10px;   
+        top:10px;  
+}
+.is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }

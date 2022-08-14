@@ -48,7 +48,7 @@
         <section class="hero-general">
             <div class="conteiner">
                 <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                <button type="button" class="hero-button">Замовити послугу</button>
+                <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
         <section class="information">
@@ -95,10 +95,10 @@
             <div class="conteiner">
                 <h2 class="our-work">Чим ми займаємося</h2>
                 <ul class="work-list list">
-                    <li class="work-foto"> <img src="./img/img1.jpg" width="370" height="294" alt="клавиатура"></li>
-                    <li class="work-foto"> <img src="./img/img2.jpg" width="370" height="294"
-                            alt="подсоединение к ноутбуку"></li>
-                    <li class="work-foto"> <img src="./img/img3.jpg" width="370" height="294" alt="планшет"></li>
+                    <li class="work-foto"><div class="work-title-div"><img src="./img/img1.jpg" width="370" height="294" alt="клавиатура"><p class="work-title">Десктопні додатки</p></div></li>
+                    <li class="work-foto"><div><img src="./img/img2.jpg" width="370" height="294"
+                            alt="подсоединение к ноутбуку"><p class="work-title">Мобільні додатки</p></div></li>
+                    <li class="work-foto"><div><img src="./img/img3.jpg" width="370" height="294" alt="планшет"><p class="work-title">Дизайнерські рішення</p></div></li>
                 </ul>
             </div>
 
@@ -283,10 +283,18 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-battom" data-modal-close><svg class="modal-icon" width="11" height="11">
+                <use href="./img/symbol-defs.svg#icon-close"></use>
+            </svg></button>
+        </div>
+    </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
