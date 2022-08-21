@@ -286,6 +286,42 @@
             <button type="button" class="modal-battom" data-modal-close><svg class="modal-icon" width="11" height="11">
                 <use href="./img/symbol-defs.svg#icon-close"></use>
             </svg></button>
+            <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+            <form class="modal-form">
+                <div class="input-div"><label><span class="label-text">Ім'я</span>
+                        <span class="input-wrap"><input type="text" class="form-input" name="user-name" required>
+                            <svg class="input-icon" width="18" height="18">
+                                <use href="./img/symbol-defs.svg#icon-personinput"></use>
+                            </svg>
+                        </span>
+                    </label></div>
+                <div class="input-div"><label><span class="label-text">Телефон</span>
+                        <span class="input-wrap"><input type="text" class="form-input" name="user-name" required>
+                            <svg class="input-icon" width="18" height="18">
+                                <use href="./img/symbol-defs.svg#icon-phoneinput"></use>
+                            </svg>
+                        </span>
+                    </label></div>
+                <div class="input-div"><label><span class="label-text">Пошта</span>
+                        <span class="input-wrap"><input type="text" class="form-input" name="user-name" required>
+                            <svg class="input-icon" width="18" height="18">
+                                <use href="./img/symbol-defs.svg#icon-emailinput"></use>
+                            </svg>
+                        </span>
+                    </label></div>
+                <div class="input-div">
+                    <label for="user-comment" class="label-text">Коментар</label>
+                    <textarea name="user-comment" id="user-comment" placeholder="Введіть текст" class="modal-text"></textarea>
+                </div>
+                <div class="input-div">
+                    <input type="checkbox" name="user-click" value="true" class="input-check subtext-div" id="checkbox">
+                    <label for="checkbox" class="check-text"><span><svg class="check-icon" width="11" height="8">
+                        <use href="./img/symbol-defs.svg#icon-click"></use>
+                    </svg></span>Погоджуюся з розсилкою та приймаю Умови договору</label>
+                </div>
+                <button type="submit" class="input-buttom"><span class="input-buttom-span">Відправити</span></button>
+            </form>
+           
         </div>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
