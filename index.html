@@ -261,23 +261,31 @@
             <div class="footer-icon list">
                 <h3 class="footer-h list">приєднайтесь</h3>
                 <ul class="footer-icon-ul list">
-                    <li class="team-icon-li"><a href="" class="footer-icon-link"><svg class="footer-icon-co" width="20"
-                                height="20">
+                    <li class="team-icon-li"><a href="" class="footer-icon-link"><svg class="footer-icon-co" width="20" height="20">
                                 <use href="./img/symbol-defs.svg#icon-instagram"></use>
                             </svg></a></li>
-                    <li class="team-icon-li"><a href="" class="footer-icon-link"><svg class="footer-icon-co" width="20"
-                                height="20">
+                    <li class="team-icon-li"><a href="" class="footer-icon-link"><svg class="footer-icon-co" width="20" height="20">
                                 <use href="./img/symbol-defs.svg#icon-twitter"></use>
                             </svg></a></li>
-                    <li class="team-icon-li"><a href="" class="footer-icon-link"><svg class="footer-icon-co" width="20"
-                                height="20">
+                    <li class="team-icon-li"><a href="" class="footer-icon-link"><svg class="footer-icon-co" width="20" height="20">
                                 <use href="./img/symbol-defs.svg#icon-facebook"></use>
                             </svg></a></li>
-                    <li class="team-icon-li"><a href="" class="footer-icon-link"><svg class="footer-icon-co" width="20"
-                                height="20">
+                    <li class="team-icon-li"><a href="" class="footer-icon-link"><svg class="footer-icon-co" width="20" height="20">
                                 <use href="./img/symbol-defs.svg#icon-linkedin"></use>
                             </svg></a></li>
                 </ul>
+            </div>
+            <div class="mailing">
+                <p class="mailing-text">Підпишіться на розсилку</p>
+                <form class="mailing-form">
+                    <label class="mailing-label">
+                        <input type="text" class="mailing-input" name="user-name" placeholder="E-mail" required>
+                    </label>
+                    <button type="submit" class="mailing-buttom"><span class="mailing-buttom-text">Підписатися</span>
+                            <svg class="mailing-icon" width="24" height="24">
+                                <use href="./img/symbol-defs.svg#icon-mailing"></use>
+                            </svg></button>
+                </form>
             </div>
         </div>
     </footer>
@@ -314,14 +322,13 @@
                     <textarea name="user-comment" id="user-comment" placeholder="Введіть текст" class="modal-text"></textarea>
                 </div>
                 <div class="input-div">
-                    <input type="checkbox" name="user-click" value="true" class="input-check subtext-div" id="checkbox">
+                    <input type="checkbox" name="user-click" value="true" class="input-check subtext-div-checkbox" id="checkbox">
                     <label for="checkbox" class="check-text"><span><svg class="check-icon" width="11" height="8">
                         <use href="./img/symbol-defs.svg#icon-click"></use>
-                    </svg></span>Погоджуюся з розсилкою та приймаю Умови договору</label>
+                    </svg></span>Погоджуюся з розсилкою та приймаю<p class="check-text-check">Умови договору</p></label>
                 </div>
                 <button type="submit" class="input-buttom"><span class="input-buttom-span">Відправити</span></button>
             </form>
-           
         </div>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
