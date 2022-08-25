@@ -889,6 +889,7 @@ transform: translate(-50%, -50%) scale(0);
 }
 .input-div{
     margin-bottom: 10px;
+   
 }
 .form-input{
     width: 100%;
@@ -971,7 +972,9 @@ position: relative;
     letter-spacing: 0.03em;
     color: var(--second-title-color);
     display: flex;
-    align-items: center;
+    justify-content: center;
+        
+        align-items: center;
 }
 
 .check-text span {
@@ -991,6 +994,9 @@ position: relative;
     fill: transparent;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+.check-icon:focus{
+    background-color: var(--interactive-elements-color);
+}
 
 .input-check:checked+.check-text span {
 background-color: var(--interactive-elements-color);
@@ -1020,6 +1026,10 @@ border-color: var(--interactive-elements-color);
     width: 358px;
     height: 50px;
     padding-left: 16px;
+    background-color: #2F303A;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
 }
 .check-text-check{
     margin-left: 5px;
@@ -1028,6 +1038,7 @@ border-color: var(--interactive-elements-color);
         line-height: 1.71;
         text-decoration-line: underline;
         color: #2196F3;
+        cursor: pointer;
 }
 
 .mailing-buttom{
