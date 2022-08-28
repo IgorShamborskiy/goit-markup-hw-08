@@ -1,0 +1,14 @@
+
+:root {
+    --interactive-elements-color: #2196F3;
+    --main-title-color: #212121;
+    --second-title-color: #757575;
+    --third-title-color: #FFFFFF
+}
+
+body {
+    font-family: 'Roboto', 'sans-serif';
+    color: var(--main-title-color);
+    letter-spacing: 0.03em;
+    background-color: var(--third-title-color);
+}
