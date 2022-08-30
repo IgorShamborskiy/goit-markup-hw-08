@@ -1,4 +1,4 @@
-.header-contacts {
+.contacts {
     display: flex;
     column-gap: 50px;
     justify-content: center;
@@ -6,8 +6,8 @@
 
 }
 
-.header-mail,
-.header-tell {
+.contact__mail,
+.contact__tell {
     display: flex;
     align-items: center;
     padding-top: 32px;
@@ -31,7 +31,7 @@
     }
 }
 
-.mail-logo {
+.contact__mail-logo {
     margin-right: 10px;
     text-align: center;
     fill: #757575;
@@ -42,21 +42,21 @@
         fill: var(--interactive-elements-color);
     }
 
-    .header-mail:hover &,
-    .header-mail:focus & {
+    .contact__mail:hover &,
+    .contact__mail:focus & {
         fill: var(--interactive-elements-color);
         ;
     }
 }
 
-.tell-logo {
+.contact__tell-logo {
     margin-right: 10px;
     text-align: center;
     fill: #757575;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .header-tell:hover &,
-    .header-tell:focus & {
+    .contact__tell:hover &,
+    .contact__tell:focus & {
         fill: var(--interactive-elements-color);
 
     }
