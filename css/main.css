@@ -2,14 +2,9 @@
   --interactive-elements-color: #2196F3;
   --main-title-color: #212121;
   --second-title-color: #757575;
-  --third-title-color: #FFFFFF ;
-}
-
-body {
-  font-family: "Roboto", "sans-serif";
-  color: var(--main-title-color);
-  letter-spacing: 0.03em;
-  background-color: var(--third-title-color);
+  --third-title-color: #FFFFFF;
+  --font-style: normal;
+  --main-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 html {
@@ -46,6 +41,13 @@ ul {
 
 img {
   display: block;
+}
+
+body {
+  font-family: "Roboto", "sans-serif";
+  color: var(--main-title-color);
+  letter-spacing: 0.03em;
+  background-color: var(--third-title-color);
 }
 
 .conteiner {
@@ -139,8 +141,8 @@ img {
 
 .logo__word {
   color: #000000;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color var(--main-transition);
+  transition: color var(--main-transition);
 }
 .logo__word:hover, .logo__word:focus {
   color: var(--interactive-elements-color);
@@ -153,8 +155,8 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-title-color);
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color var(--main-transition);
+  transition: color var(--main-transition);
 }
 .navigation__link:hover, .navigation__link:focus {
   color: var(--interactive-elements-color);
@@ -218,8 +220,8 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--second-title-color);
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color var(--main-transition);
+  transition: color var(--main-transition);
 }
 .contact__mail:hover, .contact__mail:focus,
 .contact__tell:hover,
@@ -236,8 +238,8 @@ img {
   margin-right: 10px;
   text-align: center;
   fill: #757575;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color var(--main-transition);
+  transition: color var(--main-transition);
 }
 .contact__mail-logo:hover, .contact__mail-logo :focus {
   fill: var(--interactive-elements-color);
@@ -250,8 +252,8 @@ img {
   margin-right: 10px;
   text-align: center;
   fill: #757575;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color var(--main-transition);
+  transition: color var(--main-transition);
 }
 .contact__tell:hover .contact__tell-logo, .contact__tell:focus .contact__tell-logo {
   fill: var(--interactive-elements-color);
@@ -510,7 +512,7 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 .team__name {
-  font-style: normal;
+  font-style: var(--font-style);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -519,7 +521,7 @@ img {
 .team__profesion {
   margin-bottom: 16px;
   margin-top: 10px;
-  font-style: normal;
+  font-style: var(--font-style);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -670,7 +672,7 @@ img {
 
 .clientage-header {
   margin-bottom: 50px;
-  font-style: normal;
+  font-style: var(--font-style);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -740,21 +742,13 @@ img {
       -ms-flex-align: baseline;
           align-items: baseline;
 }
-.footer-logo {
+.footer__logo {
   display: block;
   margin-bottom: 20px;
 }
 .footer-word {
   font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  color: var(--third-title-color);
-}
-.footer-word {
-  font-family: "Raleway";
-  font-style: normal;
+  font-style: var(--font-style);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -766,8 +760,8 @@ img {
   line-height: 1.71;
   font-style: normal;
   color: var(--third-title-color);
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color var(--main-transition);
+  transition: color var(--main-transition);
 }
 .footer-tell, .footer-mail {
   font-weight: 400;
@@ -775,8 +769,8 @@ img {
   line-height: 1.71;
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color var(--main-transition);
+  transition: color var(--main-transition);
 }
 .footer-address:hover, .footer-address:focus {
   color: var(--interactive-elements-color);
@@ -1104,8 +1098,9 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-image: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .check-icon {
@@ -1115,6 +1110,10 @@ img {
 }
 .check-icon:focus {
   background-color: var(--interactive-elements-color);
+}
+
+.input-check:focus + .check-text span {
+  border-color: var(--interactive-elements-color);
 }
 
 .input-check:focus {

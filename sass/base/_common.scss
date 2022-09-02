@@ -1,5 +1,7 @@
-.conteiner {
-    width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
+
+body {
+    font-family: 'Roboto', 'sans-serif';
+    color: var(--main-title-color);
+    letter-spacing: 0.03em;
+    background-color: var(--third-title-color);
 }
