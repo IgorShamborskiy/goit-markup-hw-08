@@ -13,8 +13,10 @@
     margin: 0 auto;
     fill: #AFB1B8;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
+    
 
     &-li {
         width: 170px;
@@ -33,8 +35,7 @@
     }
 
     &-section {
-        padding-bottom: 94px;
-        padding-top: 94px;
+        padding:60px 15px;
     }
 
     &-icon {
