@@ -1,13 +1,33 @@
-.footer {
+.footer__conteiner {
     display: block;
-    padding: 60px 0px;
-    background-color: #2F303A;
-
-    & .conteiner {
+    // align-items: baseline;
+    gap: 60px;
+    justify-content: center;
+    @media screen and (min-width:768px) {
         display: flex;
-        align-items: baseline;
-
+        flex-wrap: wrap;
+        justify-content:space-around;
     }
+        @media screen and (min-width:1200px) {
+            width: 1200px;
+          justify-content: center;
+        text-align: center;
+        }
+}
+.footer__link{
+    margin-bottom: 60px;
+    @media screen and (min-width:768px) {
+        margin-bottom: 0px;
+}
+}
+.footer {
+    width: 100%;
+    display: block;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2F303A;
+    text-align: center;
+  
 
     &__logo {
         display: block;
@@ -64,3 +84,8 @@
 .adress-li {
     margin-bottom: 9px;
 }
+// .address{
+//     @media screen and (min-width:768px) {
+//             margin-left: 76px;
+//         }
+// }

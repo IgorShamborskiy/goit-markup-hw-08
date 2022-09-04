@@ -1,13 +1,16 @@
 .footer-icon {
-    margin-left: 70px;
+    // margin-left: 70px;
 
+justify-content: center;
 }
 
 .footer-icon-ul {
     gap: 10px;
     display: flex;
-}
+    justify-content: center;
+        align-items: center;
 
+}
 .footer-icon-link {
     width: 44px;
     height: 44px;
@@ -32,6 +35,8 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
+    justify-content: center;
+        align-items: center;
 }
 
 .footer-icon-link:hover,
