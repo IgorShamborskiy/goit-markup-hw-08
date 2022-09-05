@@ -23,17 +23,17 @@
     &-li {
         width: 100%;
         
-            @media screen and (min-width:480px) {
+            @include mobile {
                 width: calc((100% - 30px) / 2);
             }
         
             width: 100%;
         
-            @media screen and (min-width:768px) {
+            @include table{
                 width: calc((100% - 60px) / 3);
             }
         
-            @media screen and (min-width:1200px) {
+            @include disktop {
                 width: calc((100% - 150px) / 6);
             }
     }

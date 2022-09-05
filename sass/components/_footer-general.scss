@@ -3,12 +3,12 @@
     // align-items: baseline;
     gap: 60px;
     justify-content: center;
-    @media screen and (min-width:768px) {
+    @include table {
         display: flex;
         flex-wrap: wrap;
         justify-content:space-around;
     }
-        @media screen and (min-width:1200px) {
+            @include disktop {
             width: 1200px;
             display: flex;
             margin: 0 auto;
@@ -16,7 +16,7 @@
 }
 .footer__link{
     margin-bottom: 60px;
-    @media screen and (min-width:768px) {
+    @include table {
         margin-bottom: 0px;
 }
 }
@@ -27,7 +27,7 @@
     padding-bottom: 60px;
     background-color: #2F303A;
     text-align: center;
-    @media screen and (min-width:1200px) {
+    @include disktop {
         text-align:left;
         }
   

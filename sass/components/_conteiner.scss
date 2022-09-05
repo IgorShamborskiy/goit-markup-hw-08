@@ -4,14 +4,15 @@
     padding-left: 15px;
     padding-right: 15px;
     width: 100%;
-    @media screen and (min-width:480px){
-        width: 480px;
-    }
-        @media screen and (min-width:768px) {
+    @include mobile {
+            width: 480px;
+        }
+    
+    @include table {
             width: 768px;
         }
-                @media screen and (min-width:1200px) {
-                    width: 1200px;
-                }
     
+    @include disktop {
+            width: 1200px;
+        }
 }
