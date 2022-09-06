@@ -49,7 +49,7 @@
                 <button type="button" class="feedback__button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
-        <section class="conteiner">
+        <!-- <section class="conteiner">
             <div class="information ">
                 <ul class="benefits list">
                     <li class="benefits__slide">
@@ -83,7 +83,7 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!-- <section class="work">
             <div class="direction conteiner">
                 <h2 class="direction__title">Чим ми займаємося</h2>
@@ -94,7 +94,6 @@
                     <li class="direction__foto"><div><img src="./img/img3.jpg" width="370" height="294" alt="планшет"><p class="direction__pre-title">Дизайнерські рішення</p></div></li>
                 </ul>
             </div>
-
         </section> -->
         <section class="our__team">
             <div class="conteiner">
@@ -143,8 +142,21 @@
                             </div>
                         </li>
                         <li class="team__list">
-                            <img src="./img/nikolay.jpg" width="270" height="260" alt="Никалай"
-                                class="team__img">
+                            <picture>
+                                <source srcset="
+                                 ./img/nikolay.jpg 1x,
+                                ./img/disktop/mykola-2x.jpg 2x" 
+                                media="(min-widh:1200px)" />
+                                <source srcset="
+                                     ./img/tabled/mykola-1x.jpg 1x,
+                                    ./img/tabled/mykola-2x.jpg 2x"
+                                     media="(min-widh:768px)" />
+                                <source srcset="
+                                     ./img/phone/mykola-1x.jpg 1x,
+                                    ./img/phone/mykola-2x.jpg 2x"
+                                     media="(max-widh:768px)" />
+                                    <img src="./img/phone/mykola-1x.jpg" width="450" height="460" alt="Никалай" class="team__img"/>
+                            </picture>
                             <div class="team__list-information">
                                 <h3 class="team__name">Николай Тарасов</h3>
                                 <p class="team__profesion">Marketing</p>
@@ -165,8 +177,21 @@
                             </div>
                         </li>
                         <li class="team__list">
-                            <img src="./img/myhaylo.jpg" width="270" height="260" alt="Михаил"
-                                class="team__img">
+                            <picture>
+                                <source srcset="
+                                    ./img/myhaylo.jpg 1x,
+                                    ./img/disktop/muhaylo-2x.jpg 2x"
+                                    media="(min-widh:1200px)" />
+                                <source srcset="
+                                    ./img/tabled/myhaylo-1x.jpg 1x,
+                                    ./img/tabled/myhaylo-2x.jpg 2x"
+                                    media="(min-widh:768px)" />
+                                <source srcset="
+                                    ./img/phone/myhaylo-1x.jpg 1x,
+                                    ./img/phone/myhaylo-2x.jpg 2x"
+                                    media="(max-widh:768px)" />
+                                <img src="./img/phone/myhaylo-1x.jpg" width="450" height="460" alt="Михайло" class="team__img" />
+                            </picture>
                             <div class="team__list-information">
                                 <h3 class="team__name">Михаил Ермаков</h3>
                                 <p class="team__profesion">UI Designer</p>
@@ -189,7 +214,7 @@
                     </ul>
                 </div>
         </section>
-        <section class="clientage-section">
+        <!-- <section class="clientage-section">
             <div class="conteiner">
                 <h2 class="clientage-header"> Постійні клієнти</h2>
                 <ul class="clientage list">
@@ -219,7 +244,7 @@
                             </svg></a></li>
                 </ul>
             </div>
-        </section>
+        </section> -->
     </main>
     <footer class="conteiner footer">
         <div class="footer__conteiner">

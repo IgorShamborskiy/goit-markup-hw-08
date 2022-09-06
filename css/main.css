@@ -309,7 +309,6 @@ body {
     line-height: 1.36;
     max-width: 1600px;
     margin: 0 auto;
-    padding: 200px 0px;
     background-image: url(../img/hero-bgphoto.jpg);
   }
 }
@@ -332,6 +331,12 @@ body {
     padding: 118px 204px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .feedback {
+    display: block;
+  }
+}
+
 .feedback__button {
   border-radius: 4px;
   display: block;
@@ -372,7 +377,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .feedback__title {
-    padding: 80px 60px 30px;
+    max-width: 696px;
     margin: 0 auto 30px;
   }
 }
@@ -503,12 +508,32 @@ body {
   color: var(--main-title-color);
 }
 
-.work {
-  padding: 0px 0px 94px;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  color: var(--interactive-elements-color);
+@media screen and (min-width: 0px) {
+  .work {
+    display: none;
+  }
+}
+@media screen and (min-width: 480px) {
+  .work {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .work {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .work {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0px 0px 94px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--interactive-elements-color);
+  }
 }
 
 .direction__foto {

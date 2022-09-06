@@ -1,9 +1,23 @@
 .work {
-    padding: 0px 0px 94px;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    color: var(--interactive-elements-color);
+    @media screen  and (min-width:0px) {
+        display: none;
+    }
+    @include mobile {
+        display: none;
+    }
+
+    @include table {
+        display: none;
+    }
+
+    @include disktop {
+        display: flex;
+        padding: 0px 0px 94px;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        color: var(--interactive-elements-color);
+    }
 }
 
  .direction__foto {

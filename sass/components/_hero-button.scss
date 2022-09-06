@@ -26,7 +26,6 @@
             line-height: 1.36;
             max-width: 1600px;
             margin: 0 auto;
-            padding: 200px 0px;
             background-image: url(../img/hero-bgphoto.jpg);
     
             @include retina {
@@ -43,6 +42,7 @@
     }
         @include disktop {
             // padding: 200px 452px;
+            display: block;
         }
     }
 .feedback__button {
@@ -82,7 +82,7 @@
     color: var(--third-title-color);
     width: 360px;
     @include disktop {
-    padding:80px 60px 30px;
+    max-width: 696px;
     margin: 0 auto 30px;
     }
 }
