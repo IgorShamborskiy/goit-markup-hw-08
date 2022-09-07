@@ -14,7 +14,7 @@
                      display:flex;
                      gap: 30px;
 }
-
+}
 .contact__mail,
 .contact__tell {
     display: flex;
@@ -32,7 +32,7 @@
         padding-bottom: 10px;
         align-items: center;
     
-        }
+    }
 
     &:hover,
     &:focus {
@@ -47,34 +47,45 @@
 }
 
 .contact__mail-logo {
-    margin-right: 10px;
-    text-align: center;
-    fill: #757575;
-    transition: color var(--main-transition);
-
-    &:hover,
-    & :focus {
-        fill: var(--interactive-elements-color);
+    margin-right: 10px;&:hover,
+        &:focus {
+            color: var(--interactive-elements-color);
+        }
+    
+        &:hover,
+        &:focus {
+            color: var(--interactive-elements-color);
+    
+        }
     }
-
-    .contact__mail:hover &,
-    .contact__mail:focus & {
-        fill: var(--interactive-elements-color);
-        
+    
+    .contact__mail-logo {
+        margin-right: 10px;
+        text-align: center;
+        fill: #757575;
+        transition: color var(--main-transition);
+    
+        &:hover,
+        & :focus {
+            fill: var(--interactive-elements-color);
+        }
+    
+        .contact__mail:hover &,
+        .contact__mail:focus & {
+            fill: var(--interactive-elements-color);
+            ;
+        }
     }
-}
-
-.contact__tell-logo {
-    margin-right: 10px;
-    text-align: center;
-    fill: #757575;
-    transition: color var(--main-transition);
-
-    // .contact__tell:hover &,
-    // .contact__tell:focus & {
-    //     fill: var(--interactive-elements-color);
-
-    // }
-}
-
-}
+    
+    .contact__tell-logo {
+        margin-right: 10px;
+        text-align: center;
+        fill: #757575;
+        transition: color var(--main-transition);
+    
+        .contact__tell:hover &,
+        .contact__tell:focus & {
+            fill: var(--interactive-elements-color);
+    
+        }
+    }

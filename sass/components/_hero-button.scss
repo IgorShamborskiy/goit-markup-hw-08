@@ -90,21 +90,23 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 40px;
+    justify-content: left;
     @include table{
             margin-bottom: 30px;
+            justify-content: center;
         }
     
         @include disktop {
             margin-bottom: 50px;
+            justify-content: center;
         }
-    justify-content: center;
     gap: 8px;
 }
 .section-partfolio {
     padding: 94px 0;
 }
 .main-button {
-    min-width: 152px;
+    // min-width: 152px;
     cursor: pointer;
     border: transparent;
     padding: 6px 22px;

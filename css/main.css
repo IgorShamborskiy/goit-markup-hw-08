@@ -369,8 +369,9 @@ body {
     gap: 30px;
   }
 }
-.contacts .contact__mail,
-.contacts .contact__tell {
+
+.contact__mail,
+.contact__tell {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -388,8 +389,8 @@ body {
   transition: color var(--main-transition);
 }
 @media screen and (min-width: 768px) {
-  .contacts .contact__mail,
-.contacts .contact__tell {
+  .contact__mail,
+.contact__tell {
     padding-top: 0px;
     padding-bottom: 10px;
     -webkit-box-align: center;
@@ -397,35 +398,50 @@ body {
             align-items: center;
   }
 }
-.contacts .contact__mail:hover, .contacts .contact__mail:focus,
-.contacts .contact__tell:hover,
-.contacts .contact__tell:focus {
+.contact__mail:hover, .contact__mail:focus,
+.contact__tell:hover,
+.contact__tell:focus {
   color: var(--interactive-elements-color);
 }
-.contacts .contact__mail:hover, .contacts .contact__mail:focus,
-.contacts .contact__tell:hover,
-.contacts .contact__tell:focus {
+.contact__mail:hover, .contact__mail:focus,
+.contact__tell:hover,
+.contact__tell:focus {
   color: var(--interactive-elements-color);
 }
-.contacts .contact__mail-logo {
+
+.contact__mail-logo {
+  margin-right: 10px;
+}
+.contact__mail-logo:hover, .contact__mail-logo:focus {
+  color: var(--interactive-elements-color);
+}
+.contact__mail-logo:hover, .contact__mail-logo:focus {
+  color: var(--interactive-elements-color);
+}
+
+.contact__mail-logo {
   margin-right: 10px;
   text-align: center;
   fill: #757575;
   -webkit-transition: color var(--main-transition);
   transition: color var(--main-transition);
 }
-.contacts .contact__mail-logo:hover, .contacts .contact__mail-logo :focus {
+.contact__mail-logo:hover, .contact__mail-logo :focus {
   fill: var(--interactive-elements-color);
 }
-.contact__mail:hover .contacts .contact__mail-logo, .contact__mail:focus .contacts .contact__mail-logo {
+.contact__mail:hover .contact__mail-logo, .contact__mail:focus .contact__mail-logo {
   fill: var(--interactive-elements-color);
 }
-.contacts .contact__tell-logo {
+
+.contact__tell-logo {
   margin-right: 10px;
   text-align: center;
   fill: #757575;
   -webkit-transition: color var(--main-transition);
   transition: color var(--main-transition);
+}
+.contact__tell:hover .contact__tell-logo, .contact__tell:focus .contact__tell-logo {
+  fill: var(--interactive-elements-color);
 }
 
 .hero__general {
@@ -538,19 +554,25 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 40px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   gap: 8px;
 }
 @media screen and (min-width: 768px) {
   .main-ul {
     margin-bottom: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
   .main-ul {
     margin-bottom: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -559,7 +581,6 @@ body {
 }
 
 .main-button {
-  min-width: 152px;
   cursor: pointer;
   border: transparent;
   padding: 6px 22px;
