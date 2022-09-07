@@ -108,6 +108,15 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .header__conteiner {
+    padding-left: 15px;
+    padding-right: 15px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 
 .navigation__item {
   padding: 32px 0;
@@ -122,10 +131,17 @@ body {
 }
 
 .navigation__list {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-column-gap: 50px;
      -moz-column-gap: 50px;
           column-gap: 50px;
+}
+@media screen and (max-width: 768px) {
+  .navigation__list {
+    display: none;
+  }
 }
 
 .conteiner-header-div {
@@ -211,9 +227,28 @@ body {
 }
 
 .header__modal-open {
-  argin-left: auto;
+  margin-left: auto;
   background-color: var(--third-title-color);
   border: none;
+}
+
+.header__menu-open {
+  display: block;
+  margin-left: auto;
+  margin-top: 21px;
+  background-color: var(--third-title-color);
+  border: none;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .header__menu-open {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__menu-open {
+    display: none;
+  }
 }
 
 .mob__menu {
@@ -224,7 +259,7 @@ body {
   width: 100vw;
   height: 100vh;
   z-index: 1;
-  padding-top: 48px;
+  padding-top: 10px;
   padding-bottom: 48px;
 }
 .mob__menu > .conteiner {
@@ -240,43 +275,38 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
-.header__battom-close {
+.mob__menu .header__menu-close {
   display: block;
   margin-left: auto;
   margin-top: 21px;
   background-color: var(--third-title-color);
   border: none;
 }
-
-.header__battom-close:hover,
-.header__battom-close:focus {
+.mob__menu .header__menu-close:hover,
+.mob__menu .header__menu-close:focus {
   fill: var(--interactive-elements-color);
 }
-
-.mob__navigation-item:not(:last-child) {
+.mob__menu .studia__title-menu {
+  color: var(--interactive-elements-color);
+}
+.mob__menu .mob__navigation-item:not(:last-child) {
   margin-bottom: 35px;
 }
-
-.mob__navigation-link {
+.mob__menu .mob__navigation-link {
   font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #212121;
 }
-
-.mob__navigation-linkt:hover,
-.mob__navigation-link:focus {
+.mob__menu .mob__navigation-linkt:hover,
+.mob__menu .mob__navigation-link:focus {
   color: var(--interactive-elements-color);
 }
-
-.mob__contacts {
-  display: block;
-  margin-bottom: 64px;
+.mob__menu .mob__contakt-link {
+  margin-bottom: 32px;
 }
-
-.mob__contact-mail {
+.mob__menu .mob__contact-mail {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.16;
@@ -284,8 +314,7 @@ body {
   color: #757575;
   padding-top: 32px;
 }
-
-.mob__contact-tell {
+.mob__menu .mob__contact-tell {
   font-weight: 500;
   font-size: 34px;
   line-height: 1.17;
@@ -293,40 +322,55 @@ body {
   color: var(--interactive-elements-color);
   margin-bottom: 32px;
 }
-
-.mob__soc-list {
+.mob__menu .mob__soc-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
-.mob__soc-link {
+.mob__menu .mob__soc-link {
   position: relative;
   padding-left: 10px;
 }
-
-.mob__soc-link::before {
+.mob__menu .mob__link::before {
   content: "";
   position: absolute;
   left: 0;
   width: 1px;
   height: 22px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  background-color: solid rgba(33, 33, 33, 0.2);
 }
 
 .contacts {
-  display: none;
-  -webkit-column-gap: 50px;
-     -moz-column-gap: 50px;
-          column-gap: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin-left: auto;
 }
-
-.contact__mail,
-.contact__tell {
+@media screen and (max-width: 768px) {
+  .contacts {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: block;
+    padding-top: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+  }
+}
+.contacts .contact__mail,
+.contacts .contact__tell {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -343,40 +387,45 @@ body {
   -webkit-transition: color var(--main-transition);
   transition: color var(--main-transition);
 }
-.contact__mail:hover, .contact__mail:focus,
-.contact__tell:hover,
-.contact__tell:focus {
+@media screen and (min-width: 768px) {
+  .contacts .contact__mail,
+.contacts .contact__tell {
+    padding-top: 0px;
+    padding-bottom: 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.contacts .contact__mail:hover, .contacts .contact__mail:focus,
+.contacts .contact__tell:hover,
+.contacts .contact__tell:focus {
   color: var(--interactive-elements-color);
 }
-.contact__mail:hover, .contact__mail:focus,
-.contact__tell:hover,
-.contact__tell:focus {
+.contacts .contact__mail:hover, .contacts .contact__mail:focus,
+.contacts .contact__tell:hover,
+.contacts .contact__tell:focus {
   color: var(--interactive-elements-color);
 }
-
-.contact__mail-logo {
+.contacts .contact__mail-logo {
   margin-right: 10px;
   text-align: center;
   fill: #757575;
   -webkit-transition: color var(--main-transition);
   transition: color var(--main-transition);
 }
-.contact__mail-logo:hover, .contact__mail-logo :focus {
+.contacts .contact__mail-logo:hover, .contacts .contact__mail-logo :focus {
   fill: var(--interactive-elements-color);
 }
-.contact__mail:hover .contact__mail-logo, .contact__mail:focus .contact__mail-logo {
+.contact__mail:hover .contacts .contact__mail-logo, .contact__mail:focus .contacts .contact__mail-logo {
   fill: var(--interactive-elements-color);
 }
-
-.contact__tell-logo {
+.contacts .contact__tell-logo {
   margin-right: 10px;
   text-align: center;
   fill: #757575;
   -webkit-transition: color var(--main-transition);
   transition: color var(--main-transition);
-}
-.contact__tell:hover .contact__tell-logo, .contact__tell:focus .contact__tell-logo {
-  fill: var(--interactive-elements-color);
 }
 
 .hero__general {

@@ -14,6 +14,12 @@
     &__conteiner {
         display: flex;
         align-items: center;
+        @media screen and (min-width:768px) {
+                padding-left: 15px; 
+                padding-right: 15px;
+                align-items: center;
+            
+        }
 
     }
 
@@ -33,9 +39,11 @@
  }
 
  .navigation__list {
-    display: none;
-    //  display: flex;
+     display: flex;
      column-gap: 50px;
+    @media screen and (max-width:768px) {
+            display: none;
+        }
  }
 
 .conteiner-header-div {
@@ -127,11 +135,29 @@
     text-decoration: none;
 }
 
-.header__modal-open {argin-left: auto;
+.header__modal-open {
+    margin-left: auto;
     background-color: var(--third-title-color);
-    border: none;}
+    border: none;
+}
 
-.header__modal-icon {}
+.header__menu-open{
+    display: block;
+    margin-left: auto;
+    margin-top: 21px;
+    background-color: var(--third-title-color);
+    border: none;
+    margin-bottom: 10px;
+
+    @include table {
+            display: none;
+        }
+    
+        @include disktop {
+            display: none;
+            ;
+        }
+}
 
 .mob__menu {
     position: fixed;
@@ -141,35 +167,33 @@
     width: 100vw;
     height: 100vh;
     z-index: 1;
-    padding-top: 48px;
+    padding-top: 10px;
     padding-bottom: 48px;
     >.conteiner{
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content:space-between;
-    }
+    
 }
 
-.header__battom-close {
+.header__menu-close {
     display: block;
     margin-left: auto;
     margin-top: 21px;
     background-color: var(--third-title-color);
     border: none;
 }
-.header__battom-close:hover,
-.header__battom-close:focus{
+.header__menu-close:hover,
+.header__menu-close:focus{
     fill: var(--interactive-elements-color);
 }
 
-
-.mob__navigation-list {
-
-    // margin-bottom: 302px;
+.studia__title-menu{
+    color: var(--interactive-elements-color);
 }
 
-.list {}
+
 
 .mob__navigation-item:not(:last-child) {
 margin-bottom: 35px;
@@ -186,17 +210,10 @@ margin-bottom: 35px;
 .mob__navigation-link:focus {
     color: var(--interactive-elements-color);
 }
-.link {}
 
-.curent {}
-
-.studia-title {}
-
-.mob__contacts {
-    display: block;
-    margin-bottom: 64px;
+.mob__contakt-link{
+    margin-bottom: 32px;
 }
-
 .mob__contact-mail {
     font-weight: 500;
         font-size: 24px;
@@ -221,19 +238,20 @@ margin-bottom: 35px;
     display: flex;
 }
 
-.mob__soc-item {}
+
 
 .mob__soc-link {
     position: relative;
     padding-left: 10px;
 }
 
-.mob__soc-link::before{
+.mob__link::before{
 content: '';
 position: absolute;
 left: 0;
 width: 1px;
 height: 22px;
 border: 1px solid rgba(33, 33, 33, 0.2);
-
+background-color: solid rgba(33, 33, 33, 0.2);
+}
 }
