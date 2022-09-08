@@ -1,6 +1,5 @@
 .input-div {
     margin-bottom: 10px;
-
 }
 
 .form-input {
@@ -88,14 +87,25 @@
 
 .check-text {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--second-title-color);
     display: flex;
-    justify-content: center;
-
+    flex-wrap: wrap;
+    justify-content:center;
     align-items: center;
+    text-align: center;
+    @include disktop {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: var(--second-title-color);
+        display: flex;
+        align-items: center;
+    }
+    
     & span {
             width: 16px;
             height: 15px;
@@ -110,7 +120,24 @@
         }
 }
 
-
+.check-text-check {
+    margin-left: 5px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    text-decoration-line: underline;
+    color: #2196F3;
+    cursor: pointer;
+    @include disktop {
+    margin-left: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration-line: underline;
+    color: #2196F3;
+    cursor: pointer;
+        }
+}
 .check-icon {
     fill: transparent;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);

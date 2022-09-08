@@ -61,10 +61,12 @@
                         </ul>
                     </div>
                     <div class="mob__contacts list">
-                        <li class="mob__contakt-link"><a href="tel+380961111111" class="mob__contact-tell link">+380961111111</a>
-                        </li>
-                        <li class="mob__contakt-link"><a href="mailto:info@devstudio.com"
-                                class="mob__contact-mail link">info@devstudio.com</a></li>
+                        <ul>
+                            <li class="mob__contakt-link"><a href="tel+380961111111" class="mob__contact-tell link">+380961111111</a>
+                            </li>
+                            <li class="mob__contakt-link"><a href="mailto:info@devstudio.com" class="mob__contact-mail link">info@devstudio.com</a>
+                            </li>
+                        </ul>
                     </div>
                     <div>
                         <ul class="mob__soc-list list">
@@ -98,16 +100,10 @@
                     <li class="posters-li">
                         <a href="" class="servis-posters link"><div class="subtext-div" >
                             <picture>
-                                <source srcset="
-                                    ./img/website.jpg 1x,
-                                    ./img/disktop/poster-2x 2x" media="(min-widh:1200px)" />
-                                <source srcset="
-                                    ./img/tabled/poster-1x.jpg 1x,
-                                    ./img/tabled/poster-2x.jpg 2x" media="(min-widh:768px)" />
-                                <source srcset="
-                                    ./img/phone/poster-1x.jpg 1x,
-                                    ./img/phone/poster-2x.jpg 2x" media="(max-widh:768px)" />
-                                <img src="./img/phone/poster-1x.jpg" width="450" height="404" alt="website" class="team__img" />
+                                <source media="(min-width: 1200px)" srcset="./img/website.jpg 1x, ./img/disktop/poster1-2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset=" ./img/tabled/poster-1x.jpg 1x, ./img/tabled/poster-2x.jpg 2x">
+                                <img class="team__img" srcset="./img/phone/poster-2x.jpg 2x" src="./img/phone/poster-1x.jpg" width="450" height="404"
+                                    alt="Постер" />
                             </picture>
                         <p class="subtext">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                             сервісів. Все це дозволить
@@ -126,18 +122,10 @@
                     <li class="posters-li">
                         <a href="" class="servis-posters link"><div class="subtext-div">
                             <picture>
-                                <source srcset="
-                                        ./img/design.jpg 1x,
-                                        ./img/disktop/poster1-2x 2x" media="(min-widh:1200px)" />
-                                <source srcset="
-                                        ./img/tabled/poster1-1x.jpg 1x,
-                                        ./img/tabled/poster1-2x.jpg 2x"
-                                    media="(min-widh:768px)" />
-                                <source srcset="
-                                        ./img/phone/poster1-1x.jpg 1x,
-                                        ./img/phone/poster1-2x.jpg 2x"
-                                    media="(max-widh:768px)" />
-                                <img src="./img/phone/poster1-1x.jpg" width="450" height="404" alt="дезайн" class="team__img" />
+                                <source media="(min-width: 1200px)" srcset="./img/design.jpg 1x, ./img/disktop/poster2-2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset=" ./img/tabled/poster1-1x.jpg 1x, ./img/tabled/poster1-2x.jpg 2x">
+                                <img class="team__img" srcset="./img/phone/poster1-2x.jpg 2x" src="./img/phone/poster1-1x.jpg" width="450" height="404"
+                                    alt="Постер" />
                             </picture>
                         <p class="subtext">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                             сервісів. Все це дозволить
@@ -157,21 +145,10 @@
                         <a href="" class="servis-posters link">
                             <div class="subtext-div">
                                 <picture>
-                                    <source srcset="
-                                         ./img/addition.jpg 1x,
-                                          ./img/disktop/poster2-2x 2x"
-                                        media="(min-widh:1200px)" />
-                                    <source
-                                        srcset="
-                                         ./img/tabled/poster2-1x.jpg 1x,
-                                         ./img/tabled/poster2-2x.jpg 2x"
-                                        media="(min-widh:768px)" />
-                                    <source
-                                        srcset="
-                                         ./img/phone/poster2-1x.jpg 1x,
-                                         ./img/phone/poster2-2x.jpg 2x"
-                                        media="(max-widh:768px)" />
-                                    <img src="./img/phone/poster2-1x.jpg" width="450" height="404" alt="логотип" class="team__img" />
+                                    <source media="(min-width: 1200px)" srcset="./img/addition.jpg 1x, ./img/disktop/poster3-2x.jpg 2x">
+                                    <source media="(min-width: 768px)" srcset=" ./img/tabled/poster2-1x.jpg 1x, ./img/tabled/poster2-2x.jpg 2x">
+                                    <img class="team__img" srcset="./img/phone/poster2-2x.jpg 2x" src="./img/phone/poster2-1x.jpg" width="450" height="404"
+                                        alt="Постер" />
                                 </picture>
                                 <p class="subtext">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                                     сервісів. Все це дозволить
@@ -191,19 +168,10 @@
                     <li class="posters-li">
                         <a href="" class="servis-posters link"><div class="subtext-div">
                             <picture>
-                                <source srcset="
-                                    ./img/marketing.jpg 1x,
-                                    ./img/disktop/poster3-2x 2x"
-                                     media="(min-widh:1200px)" />
-                                <source srcset="
-                                    ./img/tabled/poster3-1x.jpg 1x,
-                                    ./img/tabled/poster3-2x.jpg 2x"
-                                     media="(min-widh:768px)" />
-                                <source srcset="
-                                     ./img/phone/poster3-1x.jpg 1x,
-                                     ./img/phone/poster3-2x.jpg 2x"
-                                      media="(max-widh:768px)" />
-                                <img src="./img/phone/poster3-1x.jpg" width="450" height="404" alt="наушники" class="team__img" />
+                                <source media="(min-width: 1200px)" srcset="./img/marketing.jpg 1x, ./img/disktop/poster4-2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset=" ./img/tabled/poster3-1x.jpg 1x, ./img/tabled/poster3-2x.jpg 2x">
+                                <img class="team__img" srcset="./img/phone/poster3-2x.jpg 2x" src="./img/phone/poster3-1x.jpg" width="450" height="404"
+                                    alt="Постер" />
                             </picture>
                         <p class="subtext">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                             сервісів. Все це дозволить
@@ -222,19 +190,10 @@
                     <li class="posters-li">
                         <a href="" class="servis-posters link"><div class="subtext-div">
                             <picture>
-                                <source srcset="
-                                    ./img/website2.jpg 1x,
-                                    ./img/disktop/poster4-2x 2x"
-                                     media="(min-widh:1200px)" />
-                                <source srcset="
-                                    ./img/tabled/poster4-1x.jpg 1x,
-                                    ./img/tabled/poster4-2x.jpg 2x"
-                                     media="(min-widh:768px)" />
-                                <source srcset="
-                                    ./img/phone/poster4-1x.jpg 1x,
-                                    ./img/phone/poster4-2x.jpg 2x"
-                                     media="(max-widh:768px)" />
-                                <img src="./img/phone/poster4-1x.jpg" width="450" height="404" alt="коробки" class="team__img" />
+                                <source media="(min-width: 1200px)" srcset=" ./img/website2.jpg 1x, ./img/disktop/poster5-2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset=" ./img/tabled/poster4-1x.jpg 1x, ./img/tabled/poster4-2x.jpg 2x">
+                                <img class="team__img" srcset="./img/phone/poster4-2x.jpg 2x" src="./img/phone/poster4-1x.jpg" width="450" height="404"
+                                    alt="Постер" />
                             </picture>
                         <p class="subtext">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                             сервісів. Все це дозволить
@@ -253,19 +212,10 @@
                     <li class="posters-li">
                         <a href="" class="servis-posters link"><div class="subtext-div">
                             <picture>
-                                <source srcset="
-                                ./img/addition2.jpg 1x,
-                                ./img/disktop/poster5-2x 2x"
-                                 media="(min-widh:1200px)" />
-                                <source srcset="
-                                ./img/tabled/poster5-1x.jpg 1x,
-                                ./img/tabled/poster5-2x.jpg 2x"
-                                 media="(min-widh:768px)" />
-                                <source srcset="
-                                ./img/phone/poster5-1x.jpg 1x,
-                                ./img/phone/poster5-2x.jpg 2x"
-                                 media="(max-widh:768px)" />
-                                <img src="./img/phone/poster5-1x.jpg" width="450" height="404" alt="монітор" class="team__img" />
+                                <source media="(min-width: 1200px)" srcset=" ./img/addition2.jpg 1x, ./img/disktop/poster6-2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset=" ./img/tabled/poster5-1x.jpg 1x, ./img/tabled/poster5-2x.jpg 2x">
+                                <img class="team__img" srcset="./img/phone/poster5-2x.jpg 2x" src="./img/phone/poster5-1x.jpg" width="450" height="404"
+                                    alt="Постер" />
                             </picture>
                         <p class="subtext">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                             сервісів. Все це дозволить
@@ -284,19 +234,10 @@
                     <li class="posters-li">
                         <a href="" class="servis-posters link"><div class="subtext-div">
                             <picture>
-                                <source srcset="
-                                    ./img/design2.jpg 1x,
-                                    ./img/disktop/poster6-2x 2x"
-                                     media="(min-widh:1200px)" />
-                                <source srcset="
-                                    ./img/tabled/poster6-1x.jpg 1x,
-                                    ./img/tabled/poster6-2x.jpg 2x"
-                                     media="(min-widh:768px)" />
-                                <source srcset="
-                                    ./img/phone/poster6-1x.jpg 1x,
-                                    ./img/phone/poster6-2x.jpg 2x"
-                                     media="(max-widh:768px)" />
-                                <img src="./img/phone/poster6-1x.jpg" width="450" height="404" alt="книга" class="team__img" />
+                                <source media="(min-width: 1200px)" srcset=" ./img/design2.jpg 1x, ./img/disktop/poster7-2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset=" ./img/tabled/poster6-1x.jpg 1x, ./img/tabled/poster6-2x.jpg 2x">
+                                <img class="team__img" srcset="./img/phone/poster6-2x.jpg 2x" src="./img/phone/poster6-1x.jpg" width="450" height="404"
+                                    alt="Постер" />
                             </picture>
                         <p class="subtext">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                             сервісів. Все це дозволить
@@ -315,19 +256,10 @@
                     <li class="posters-li">
                         <a href="" class="servis-posters link"><div class="subtext-div">
                             <picture>
-                                <source srcset="
-                                ./img/marketing2.jpg 1x,
-                                ./img/disktop/poster7-2x 2x" 
-                                media="(min-widh:1200px)" />
-                                <source srcset="
-                                ./img/tabled/poster7-1x.jpg 1x,
-                                ./img/tabled/poster7-2x.jpg 2x"
-                                 media="(min-widh:768px)" />
-                                <source srcset="
-                                ./img/phone/poster7-1x.jpg 1x,
-                                ./img/phone/poster7-2x.jpg 2x"
-                                 media="(max-widh:768px)" />
-                                <img src="./img/phone/poster7-1x.jpg" width="450" height="404" alt="етикетка" class="team__img" />
+                                <source media="(min-width: 1200px)" srcset=" ./img/marketing2.jpg 1x, ./img/disktop/poster8-2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset=" ./img/tabled/poster7-1x.jpg 1x, ./img/tabled/poster7-2x.jpg 2x">
+                                <img class="team__img" srcset="./img/phone/poster7-2x.jpg 2x" src="./img/phone/poster7-1x.jpg" width="450" height="404"
+                                    alt="Постер" />
                             </picture>
                         <p class="subtext">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                             сервісів. Все це
@@ -347,19 +279,10 @@
                     <li class="posters-li">
                         <a href="" class="servis-posters link"><div class="subtext-div">
                             <picture>
-                                <source srcset="
-                                    ./img/addition3.jpg 1x,
-                                    ./img/disktop/poster8-2x 2x" 
-                                    media="(min-widh:1200px)" />
-                                <source srcset="
-                                    ./img/tabled/poster8-1x.jpg 1x,
-                                    ./img/tabled/poster8-2x.jpg 2x" 
-                                    media="(min-widh:768px)" />
-                                <source srcset="
-                                    ./img/phone/poster8-1x.jpg 1x,
-                                    ./img/phone/poster8-2x.jpg 2x" 
-                                    media="(max-widh:768px)" />
-                                <img src="./img/phone/poster8-1x.jpg" width="450" height="404" alt="нетбук" class="team__img" />
+                                <source media="(min-width: 1200px)" srcset=" ./img/addition3.jpg 1x, ./img/disktop/poster9-2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset=" ./img/tabled/poster8-1x.jpg 1x, ./img/tabled/poster8-2x.jpg 2x">
+                                <img class="team__img" srcset="./img/phone/poster8-2x.jpg 2x" src="./img/phone/poster8-1x.jpg" width="450" height="404"
+                                    alt="Постер" />
                             </picture>
                         <p class="subtext">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                             сервісів. Все це дозволить

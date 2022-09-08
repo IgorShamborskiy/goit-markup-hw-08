@@ -64,10 +64,12 @@
                             </ul>
                         </div>
                         <div class="mob__contacts list">
+                           <ul class="list">
                             <li class="mob__contakt-link"><a href="tel+380961111111" class="mob__contact-tell link">+380961111111</a>
                             </li>
-                            <li class="mob__contakt-link"><a href="mailto:info@devstudio.com"
-                                    class="mob__contact-mail link">info@devstudio.com</a></li>
+                            <li class="mob__contakt-link"><a href="mailto:info@devstudio.com" class="mob__contact-mail link">info@devstudio.com</a>
+                            </li>
+                           </ul> 
                         </div>
                         <div>
                             <ul class="mob__soc-list list">
@@ -133,10 +135,27 @@
             <div class="direction conteiner">
                 <h2 class="direction__title">Чим ми займаємося</h2>
                 <ul class="direction__list list">
-                    <li class="direction__foto"><div><img src="./img/img1.jpg" width="370" height="294" alt="клавиатура"><p class="direction__pre-title">Десктопні додатки</p></div></li>
-                    <li class="direction__foto"><div><img src="./img/img2.jpg" width="370" height="294"
-                            alt="подсоединение к ноутбуку"><p class="direction__pre-title">Мобільні додатки</p></div></li>
-                    <li class="direction__foto"><div><img src="./img/img3.jpg" width="370" height="294" alt="планшет"><p class="direction__pre-title">Дизайнерські рішення</p></div></li>
+                    <li class="direction__foto"><div>
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./img/img1.jpg 1x, ./img/disktop/img1-2x.jpg 2x">
+                            <img class="team__img" srcset="./img/disktop/img1-2x.jpg 2x" src="./img/img1.jpg" width="370" height="294"
+                                alt="клавиатура" />
+                        </picture>
+                        <p class="direction__pre-title">Десктопні додатки</p></div></li>
+                    <li class="direction__foto"><div>
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./img/img2.jpg 1x, ./img/disktop/img2-2x.jpg 2x">
+                            <img class="team__img" srcset="./img/disktop/img2-2x.jpg 2x" src="./img/img2.jpg" width="370" height="294"
+                                alt="Мобільні додатки" />
+                        </picture>
+                        <p class="direction__pre-title">Мобільні додатки</p></div></li>
+                    <li class="direction__foto"><div>
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./img/img3.jpg 1x, ./img/disktop/img3-2x.jpg 2x">
+                            <img class="team__img" srcset="./img/disktop/img3-2x.jpg 2x" src="./img/img3.jpg" width="370" height="294"
+                                alt="планшет" />
+                        </picture>
+                        <p class="direction__pre-title">Дизайнерські рішення</p></div></li>
                 </ul>
             </div>
         </section>
@@ -146,16 +165,9 @@
                     <ul class="team list">
                         <li class="team__list">
                             <picture>
-                                <source srcset="
-                                     ./img/igor.jpg.jpg 1x,
-                                     ./img/disktop/igor-2x.jpg 2x" media="(min-widh:1200px)" />
-                                <source srcset="
-                                       ./img/tabled/igor-1x.jpg 1x,
-                                       ./img/tabled/igor-2x.jpg 2x" media="(min-widh:768px)" />
-                                <source srcset="
-                                        ./img/phone/igor-1x.jpg 1x,
-                                        ./img/phone/igor-2x.jpg 2x" media="(max-widh:768px)" />
-                                <img src="./img/phone/igor-1x.jpg" width="450" height="460" alt="Никалай" class="team__img" />
+                                <source media="(min-width: 1200px)" srcset="./img/igor.jpg 1x, ./img/disktop/igor-2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset=" ./img/tabled/igor-1x.jpg 1x, ./img/tabled/igor-2x.jpg 2x">
+                                <img class="team__img" srcset="./img/phone/igor-2x.jpg 2x" src="./img/phone/igor-1x.jpg" width="450" height="460" alt="Игорь Демьяненко" />
                             </picture>
                             <div class="team__list-information">
                                 <h3 class="team__name">Игорь Демьяненко</h3>
@@ -178,16 +190,10 @@
                         </li>
                         <li class="team__list">
                             <picture>
-                                <source srcset="
-                                    ././img/olga.jpg 1x,
-                                    ./img/disktop/olga-2x.jpg 2x" media="(min-widh:1200px)" />
-                                <source srcset="
-                                     ./img/tabled/olga-1x.jpg 1x,
-                                     ./img/tabled/olga-2x.jpg 2x" media="(min-widh:768px)" />
-                                <source srcset="
-                                      ./img/phone/olga-1x.jpg 1x,
-                                      ./img/phone/olga-2x.jpg 2x" media="(max-widh:768px)" />
-                                <img src="./img/phone/olga-1x.jpg" width="450" height="460" alt="Никалай" class="team__img" />
+                                <source media="(min-width: 1200px)" srcset="./img/olga.jpg 1x, ./img/disktop/olga-2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="./img/tabled/olga-1x.jpg 1x, ./img/tabled/olga-2x.jpg 2x">
+                                <img class="team__img" srcset="./img/phone/olga-2x.jpg 2x" src="./img/phone/olga-1x.jpg" width="450" height="460"
+                                    alt="Ольга Репина" />
                             </picture>
                             <div class="team__list-information">
                                 <h3 class="team__name">Ольга Репина</h3>
@@ -210,19 +216,10 @@
                         </li>
                         <li class="team__list">
                             <picture>
-                                <source srcset="
-                                 ./img/nikolay.jpg 1x,
-                                ./img/disktop/mykola-2x.jpg 2x" 
-                                media="(min-widh:1200px)" />
-                                <source srcset="
-                                     ./img/tabled/mykola-1x.jpg 1x,
-                                    ./img/tabled/mykola-2x.jpg 2x"
-                                     media="(min-widh:768px)" />
-                                <source srcset="
-                                     ./img/phone/mykola-1x.jpg 1x,
-                                    ./img/phone/mykola-2x.jpg 2x"
-                                     media="(max-widh:768px)" />
-                                    <img src="./img/phone/mykola-1x.jpg" width="450" height="460" alt="Никалай" class="team__img"/>
+                                <source media="(min-width: 1200px)" srcset="./img/nikolay.jpg 1x, ./img/disktop/mykola-2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="./img/tabled/mykola-1x.jpg 1x, ./img/tabled/mykola-2x.jpg 2x">
+                                <img class="team__img" srcset="./img/phone/mykola-2x.jpg 2x" src="./img/phone/mykola-1x.jpg" width="450" height="460"
+                                    alt="Ольга Репина" />
                             </picture>
                             <div class="team__list-information">
                                 <h3 class="team__name">Николай Тарасов</h3>
@@ -245,19 +242,10 @@
                         </li>
                         <li class="team__list">
                             <picture>
-                                <source srcset="
-                                    ./img/myhaylo.jpg 1x,
-                                    ./img/disktop/muhaylo-2x.jpg 2x"
-                                    media="(min-widh:1200px)" />
-                                <source srcset="
-                                    ./img/tabled/myhaylo-1x.jpg 1x,
-                                    ./img/tabled/myhaylo-2x.jpg 2x"
-                                    media="(min-widh:768px)" />
-                                <source srcset="
-                                    ./img/phone/myhaylo-1x.jpg 1x,
-                                    ./img/phone/myhaylo-2x.jpg 2x"
-                                    media="(max-widh:768px)" />
-                                <img src="./img/phone/myhaylo-1x.jpg" width="450" height="460" alt="Михайло" class="team__img" />
+                                <source media="(min-width: 1200px)" srcset="./img/myhaylo.jpg 1x, ./img/disktop/muhaylo-2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="./img/tabled/myhaylo-1x.jpg 1x, ./img/tabled/myhaylo-2x.jpg 2x">
+                                <img class="team__img" srcset="./img/phone/myhaylo-2x.jpg 2x" src="./img/phone/myhaylo-1x.jpg"  width="450" height="460"
+                                    alt="Ольга Репина" />
                             </picture>
                             <div class="team__list-information">
                                 <h3 class="team__name">Михаил Ермаков</h3>

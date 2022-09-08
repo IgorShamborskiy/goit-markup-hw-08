@@ -9,8 +9,9 @@
     &-form {
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
+        // align-items: center;
         justify-content: center;
+        gap: 12px;
 
         @include disktop{ 
             display: flex; 
@@ -29,7 +30,7 @@
 
     &-input {
         margin-bottom: 20px;
-        width: 100%;
+        width: 450px;
         @include disktop {
                 width: 358px;
             }
@@ -74,13 +75,4 @@
     }
 }
 
-.check-text-check {
-    margin-left: 5px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    text-decoration-line: underline;
-    color: #2196F3;
-    cursor: pointer;
-}
 
