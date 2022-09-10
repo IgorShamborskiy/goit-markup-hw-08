@@ -5,19 +5,19 @@
     background-size: cover;
     background-image: linear-gradient(rgba(0, 0, 0, 0.25),
             rgba(0, 0, 0, 0.25)),
-            url(../img/phone/header-img1x.jpg);
+            url(../img/phone/header-phone-img1x.jpg);
 
     @include retina {
     background-image: linear-gradient(rgba(0, 0, 0, 0.25),
                         rgba(0, 0, 0, 0.25)),
-                        url(../img/phone/header-img2x.jpg);
+                        url(../img/phone/header-phone-img2x.jpg);
         }
     
         @include table {
-            background-image: url(../img/tabled/header-img1x.jpg);
+            background-image: url(../img/tabled/header-tabled-img1x.jpg);
     
             @include retina {
-                background-image: url(../img/tabled/header-img2x.jpg);
+                background-image: url(../img/tabled/header-tabled-img2x.jpg);
             }
         }
     
@@ -25,11 +25,12 @@
             font-size: 44px;
             line-height: 1.36;
             max-width: 1600px;
+            height: 600px;
             margin: 0 auto;
-            background-image: url(../img/hero-bgphoto.jpg);
+            background-image: url(../img/hero-bgphoto-disktop-1x.jpg);
     
             @include retina {
-                background-image: url(../img/disktop/header-x2.jpg);
+                background-image: url(../img/disktop/header-disktop-x2.jpg);
             }
         }
 }
@@ -41,8 +42,8 @@
     padding: 118px 204px;
     }
         @include disktop {
-            // padding: 200px 452px;
             display: block;
+            padding-top: 200px;
         }
     }
 .feedback__button {
@@ -82,7 +83,12 @@
     color: var(--third-title-color);
     width: 360px;
     @include disktop {
-    max-width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    width: 696px;
     margin: 0 auto 30px;
     }
 }
@@ -103,7 +109,21 @@
     gap: 8px;
 }
 .section-partfolio {
+    padding: 60px 0;
     padding: 94px 0;
+    @media screen and (max-width:480px) {
+        padding: 60px 0;
+    }
+    @include table {
+            padding: 60px 0;
+        }
+    
+        @include disktop {
+            padding: 94px 0;
+        }
+    
+        
+
 }
 .main-button {
     // min-width: 152px;

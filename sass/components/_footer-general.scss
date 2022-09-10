@@ -9,15 +9,23 @@
         justify-content:space-around;
     }
             @include disktop {
-            width: 1200px;
+           width: 1200px;
             display: flex;
-            margin: 0 auto;
+            justify-content: center;
+            align-items:baseline;
         }
 }
 .footer__link{
+    display: block;
     margin-bottom: 60px;
+   
     @include table {
         margin-bottom: 0px;
+
+        @include disktop{
+            margin-bottom: 60px;
+        }
+
 }
 }
 .footer {
@@ -27,8 +35,11 @@
     padding-bottom: 60px;
     background-color: #2F303A;
     text-align: center;
+
     @include disktop {
-        text-align:left;
+        display: block;
+        padding-top: 60px;
+        padding-bottom: 60px;
         }
   
 

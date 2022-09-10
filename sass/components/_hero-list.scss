@@ -34,6 +34,10 @@
                 }
     
         }
+
+    &__icon{
+        margin: 25px 100px;
+    }    
     &__text {
         display: flex;
         width: 100%;
@@ -51,6 +55,16 @@
             font-size: 14px;
             line-height: 1.14;
             text-transform: uppercase;
+            width: 100%;
+            text-align: center;
+            @include table {
+                    text-align:left;
+                }
+            
+                @include disktop {
+                    text-align: left;
+                }
+
             color: var(--main-title-color);
         }
 }

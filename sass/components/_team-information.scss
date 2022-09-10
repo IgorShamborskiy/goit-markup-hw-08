@@ -12,6 +12,7 @@
 }
 .our__team-title {
     margin-bottom: 30px;
+    padding-top: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -38,6 +39,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    padding-bottom: 60px; 
 
         &__name {
             font-style: var(--font-style);
