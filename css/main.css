@@ -1063,12 +1063,11 @@ body {
 @media screen and (max-width: 480px) {
   .subtext {
     position: absolute;
-    padding: 50px 24px;
     top: 0;
     left: 0;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.21;
+    font-size: 14px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: #FFFFFF;
     background: rgba(33, 150, 243, 0.9);
@@ -1083,6 +1082,16 @@ body {
 @media screen and (min-width: 768px) {
   .subtext {
     padding: 49px 24px 77px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 @media screen and (min-width: 1200px) {
