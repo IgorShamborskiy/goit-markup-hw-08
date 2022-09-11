@@ -4,25 +4,8 @@
 
     @include disktop {
         display: block;
-    margin-left: auto;
     }
 
-    &-form {
-    display: block;
-        align-items: center;
-        justify-content: center;
-        gap: 12px;
-    }
-        @include table {
-                display: block;
-                align-items: center;
-                justify-content: center;
-            }
-
-        @include disktop{ 
-            display: flex;
-            
-    }
 
     &-text {
         font-weight: 700;
@@ -65,7 +48,7 @@
 
     &-buttom {
         display: flex;
-            margin: 0 auto;
+        margin: 0 auto;
         align-items: center;
         justify-content: center;
         width: 200px;
@@ -74,6 +57,7 @@
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
             border-radius: 4px;
             border: none;
+            padding: 10px 28px;
         @include table {
                 display: flex;
                     align-items: center;
@@ -97,6 +81,11 @@
             }
         
     }
+        &-buttom:hover,
+        &-buttom:focus{
+            color: var(--third-title-color);
+                background-color: #188ce8;
+        }
 
     &-buttom-text {
 
@@ -112,4 +101,19 @@
     }
 }
 
+.mailing-form {
+    display: block;
+    justify-content: center;
+    gap: 12px;
+
+@include table {
+    display: block;
+    justify-content: center;
+}
+
+@include disktop {
+    display: flex;
+    justify-content:center;
+}
+}
 

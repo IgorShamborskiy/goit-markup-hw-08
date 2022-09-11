@@ -2,7 +2,7 @@
     position: absolute;
     width: 100%;
     max-width:450px ;
-    max-height: 609px;
+    min-height: 609px;
     background-color: #FFFFFF;
     border-radius: 10px;
     top: 50%;
@@ -19,7 +19,6 @@
     @include table {
         max-width: 450px;
         min-height: 609px;
-        
     }
     
         @include disktop {

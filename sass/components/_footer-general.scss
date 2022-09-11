@@ -1,18 +1,18 @@
 .footer__conteiner {
     display: block;
-    // align-items: baseline;
     gap: 60px;
     justify-content: center;
     @include table {
+        width: 768px;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         justify-content:space-around;
+        margin: auto;
     }
             @include disktop {
            width: 1200px;
             display: flex;
-            justify-content: center;
-            align-items:baseline;
         }
 }
 .footer__link{
@@ -37,9 +37,12 @@
     text-align: center;
 
     @include disktop {
+        height: 252px;
         display: block;
         padding-top: 60px;
         padding-bottom: 60px;
+        text-align:left;
+        justify-content: baseline;
         }
   
 
@@ -98,8 +101,3 @@
 .adress-li {
     margin-bottom: 9px;
 }
-// .address{
-//     @media screen and (min-width:768px) {
-//             margin-left: 76px;
-//         }
-// }
