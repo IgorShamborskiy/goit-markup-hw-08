@@ -14,10 +14,12 @@
         }
     
         @include table {
-            background-image: url(../img/tabled/header-tabled-img1x.jpg);
+            background-image:linear-gradient(rgba(0, 0, 0, 0.25),
+                    rgba(0, 0, 0, 0.25)), url(../img/tabled/header-tabled-img1x.jpg);
     
             @include retina {
-                background-image: url(../img/tabled/header-tabled-img2x.jpg);
+                background-image:linear-gradient(rgba(0, 0, 0, 0.25),
+                        rgba(0, 0, 0, 0.25)), url(../img/tabled/header-tabled-img2x.jpg);
             }
         }
     
@@ -27,10 +29,12 @@
             max-width: 1600px;
             height: 600px;
             margin: 0 auto;
-            background-image: url(../img/hero-bgphoto-disktop-1x.jpg);
+            background-image:linear-gradient(rgba(0, 0, 0, 0.25),
+                    rgba(0, 0, 0, 0.25)), url(../img/hero-bgphoto-disktop-1x.jpg);
     
             @include retina {
-                background-image: url(../img/disktop/header-disktop-x2.jpg);
+                background-image:linear-gradient(rgba(0, 0, 0, 0.25),
+                        rgba(0, 0, 0, 0.25)), url(../img/disktop/header-disktop-x2.jpg);
             }
         }
 }
@@ -47,10 +51,17 @@
         }
     }
 .feedback__button {
+
+    @media screen and (max-width:480px) {
+        width: 200px;
+        height: 50px;
+        padding: 5px 16px;
+        }
     border-radius: 4px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    // padding: 10px 32px;
     padding: 10px 32px;
     font-family: inherit;
     font-weight: 700;

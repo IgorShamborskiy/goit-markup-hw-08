@@ -43,6 +43,7 @@
      column-gap: 50px;
     @media screen and (max-width:768px) {
             display: none;
+
         }
  }
 
@@ -257,8 +258,10 @@ margin-bottom: 35px;
     letter-spacing: 0.02em;
      color: var(--interactive-elements-color);
     position: relative;
-    padding-left: 10px;
     padding-bottom: 0 auto;
+}
+.mob__soc-link:not(:first-child){
+padding-left: 10px;
 }
 
 .mob__link::before{

@@ -355,8 +355,11 @@ body {
   letter-spacing: 0.02em;
   color: var(--interactive-elements-color);
   position: relative;
-  padding-left: 10px;
   padding-bottom: 0 auto;
+}
+
+.mob__soc-link:not(:first-child) {
+  padding-left: 10px;
 }
 
 .mob__link::before {
@@ -488,12 +491,14 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero__general {
-    background-image: url(../img/tabled/header-tabled-img1x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url(../img/tabled/header-tabled-img1x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../img/tabled/header-tabled-img1x.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero__general {
-    background-image: url(../img/tabled/header-tabled-img2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url(../img/tabled/header-tabled-img2x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../img/tabled/header-tabled-img2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -503,12 +508,14 @@ body {
     max-width: 1600px;
     height: 600px;
     margin: 0 auto;
-    background-image: url(../img/hero-bgphoto-disktop-1x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url(../img/hero-bgphoto-disktop-1x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../img/hero-bgphoto-disktop-1x.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero__general {
-    background-image: url(../img/disktop/header-disktop-x2.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url(../img/disktop/header-disktop-x2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../img/disktop/header-disktop-x2.jpg);
   }
 }
 
@@ -554,6 +561,13 @@ body {
   cursor: pointer;
   border-color: transparent;
   margin-top: 30px;
+}
+@media screen and (max-width: 480px) {
+  .feedback__button {
+    width: 200px;
+    height: 50px;
+    padding: 5px 16px;
+  }
 }
 .feedback__button:focus, .feedback__button:hover {
   color: var(--third-title-color);
@@ -841,7 +855,6 @@ body {
 
 .our__team-title {
   margin-bottom: 30px;
-  padding-top: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -881,7 +894,6 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
-  padding-bottom: 60px;
 }
 .team__name {
   font-style: var(--font-style);
@@ -947,7 +959,8 @@ body {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  padding: 30px 5px;
+  padding-left: 5px;
+  padding-right: 5px;
   text-align: center;
   line-height: 1.8;
 }
@@ -1129,6 +1142,11 @@ body {
 
 .clientage-section {
   padding: 60px 15px;
+}
+@media screen and (min-width: 1200px) {
+  .clientage-section {
+    padding: 94px 15px;
+  }
 }
 
 .clientage {
@@ -1541,6 +1559,7 @@ body {
 }
 
 .modal {
+  margin-top: 15px;
   position: absolute;
   width: 100%;
   max-width: 450px;
@@ -1549,7 +1568,7 @@ body {
   border-radius: 10px;
   top: 50%;
   left: 50%;
-  padding: 40px;
+  padding: 30px;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   -webkit-transition: -webkit-transform 250ms;
@@ -1572,12 +1591,14 @@ body {
 }
 @media screen and (min-width: 768px) {
   .modal {
+    padding: 40px;
     max-width: 450px;
     min-height: 609px;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
+    padding: 40px;
     max-width: 528px;
     min-height: 581px;
   }
